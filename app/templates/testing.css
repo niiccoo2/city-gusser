@@ -45,4 +45,5 @@
     z-index: 2; /* Ensure it is on top */
     left: 50%; /* Center it */
     transform: translateX(-50%); /* Adjust for the width */
+    top:  0;
 }
