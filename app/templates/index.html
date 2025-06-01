@@ -13,17 +13,47 @@
 
 <div class="split right">
     <div class="content">
-        <h2>Table Title</h2>
-        <table>
+        <h2>Does this work?</h2>
+         <table>
             <tr>
-                <th>Header 1</th>
-                <th>Header 2</th>
+                <th>Country</th>
+                <th>City</th>
+                <th>Direction</th>
             </tr>
             <tr>
-                <td>Data 1</td>
-                <td>Data 2</td>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
             </tr>
-        </table>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+                        <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+            <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+            </tr>
+                        <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+            </tr>
+        </table> 
+        <form action="" method="post" novalidate>
+            {{ form.hidden_tag() }}
+            <p>
+                {{ form.guess.label }}<br>
+                {{ form.guess(size=32) }}
+            </p>
+            <p>{{ form.submit() }}</p>
+        </form>
     </div>
 </div>
 </html>
