@@ -1,7 +1,8 @@
-# import os
-# import random
+import os
+import random
+import time
 
-# # COLORS:
+# COLORS:
 BLACK = "\033[0;30m"
 RED = "\033[0;31m"
 GREEN = "\033[0;32m"
@@ -21,35 +22,82 @@ LIGHT_WHITE = "\033[1;37m"
 BOLD = "\033[1m"
 RESET = "\033[0m"
 
-# # VARIABLES HERE
-# city_name = random.choice(["Seattle", "Boston", "New York"])  # REPLACE THESE LATER
-# country_name = "USA"  # REPLACE THESE LATER
-# coords = [-12.125,55.2]  # REPLACE THESE LATER
-# guesses=[]
+# VARIABLES HERE
+city_name = random.choice(["Seattle","Boston","New York", "London", "Paris"])  # REPLACE THESE LATER
+country_name = random.choice(["USA","France","UK","Brazil","North Korea"])  # REPLACE THESE LATER
+coords = [random.choice([-12.125,55.2,92.4]),random.choice([-85.2,-15.6,2.5])]  # REPLACE THESE LATER
+# guesses = [["Seattle", "USA", [-13.125,55.2]]]
+guesses = []
+guess = []
+gnum = 0
 
-# def past_guesses():
-#     global guesses
-#     global country_name
-#     global coords
-#     global city_name
-#     for i in range(len(guesses)):
-#         for l in range(guesses[i]):
-#             if l == 0:
-#                 if guesses[i][l] == city_name:
-#                     print(GREEN,end="")
-#             elif l == 1:
-#                 if guesses[i][l] == country_name:
-#                     print(GREEN,end="")
-            
+def past_guesses():
+    global guesses
+    global country_name
+    global coords
+    global city_name
+    global GREEN
+    global YELLOW
+    info = []
+    # os.system('cls')
+    for i in range(len(guesses)):
+        for l in range(len(guesses[i])):
+            if l == 0:
+                if guesses[i][l] == city_name:
+                    info.append(GREEN)
+                else:
+                    info.append(RESET)
+            elif l == 1:
+                if guesses[i][l] == country_name:
+                    info.append(GREEN)
+                    # HOW ARE WE GONNA DO COUNTRIES THAT BORDER EACH OTHER?
+                else:
+                    info.append(RESET)
+            elif l == 2:
+                if guesses[i][l] == coords:
+                    info.append(GREEN)
+                elif abs((guesses[i][l][0] + guesses[i][l][1]) - (coords[0] + coords[1])) < 2:
+                    info.append(YELLOW)
+                else:
+                    info.append(RESET)
+            print(guesses[i][l])
+            info.append(str(guesses[i][l]))
+            info.append(" ")
+        info.append("\n")
+        info.append(RESET)
+    return info
 
+def get_guess():
+    global gnum
+    global GREEN
+    global RESET
+    gnum -=-1
+    while True:
+        guess = input("Guess a city!\n").lower()
+        if guess.isalpha() == True:
+            break
+        else:
+            print("Please input the name of a city.")
+    if guess == "help":
+        pass # MAYBE PUT ALL OF THE POSSIBLE CITIES HERE JUST IN CASE, YOU NEVER KNOW.
+    elif guess == city_name.lower():
+        print(GREEN+"YOU WIN!!!!!!!! OMG YOU so GOOD"+RESET)
+        exit()
+    
+    # Make guess into a list with index 0 being city, 1 being country, 2 being a list of coordinates.
+    for_guess = [guess,input("Country?\n"),[input(),input()]]
 
-# while True:
-#     print("IMAGE OF", city_name)
-#     print(past_guesses())
+    return guess
 
-lis = [RED,"CITY",RESET]
+while True:
+    guesses.append(guess)
+    guess = get_guess()
+    print("IMAGE OF", city_name)
+    os.system('cls')
+    print("".join(past_guesses()))
+    time.sleep(5)
+    # break
 
-print("".join(lis))
 
 
 
