@@ -6,7 +6,8 @@
             "latitude": 35.6768601,
             "longitude": 139.7638947,
             "image": "https://upload.wikimedia.org/wikipedia/commons/6/67/Shibuyahatchiko.jpg",
-            "credit": "Photo by Carsten Ussat / Wikimedia Commons, CC BY-SA 3.0"
+            "credit": "Photo by Carsten Ussat / Wikimedia Commons, CC BY-SA 3.0",
+            "ai": ""
         },
         {
             "city": "Boston",
@@ -14,7 +15,8 @@
             "latitude": 42.3554334,
             "longitude": -71.060511,
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Boston_skyline_from_East_Boston_November_2016_panorama_5.jpg",
-            "credit": "Photo by King of Hearts / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by King of Hearts / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "New York City",
@@ -22,7 +24,8 @@
             "latitude": 40.7127281,
             "longitude": -74.0060152,
             "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Panorama_mesta_1920-50.jpg",
-            "credit": "Photo by Unknown authorUnknown author / Wikimedia Commons, Public domain"
+            "credit": "Photo by Unknown authorUnknown author / Wikimedia Commons, Public domain",
+            "ai": ""
         },
         {
             "city": "London",
@@ -30,7 +33,8 @@
             "latitude": 51.5074456,
             "longitude": -0.1277653,
             "image": "https://upload.wikimedia.org/wikipedia/commons/5/57/At_London_2025_067.jpg",
-            "credit": "Photo by Photograph by Mike Peel (www.mikepeel.net). / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Photograph by Mike Peel (www.mikepeel.net). / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Paris",
@@ -38,7 +42,8 @@
             "latitude": 48.8534951,
             "longitude": 2.3483915,
             "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Petit_Robert_2025.jpg",
-            "credit": "Photo by Jesemeatoutvent / Wikimedia Commons, CC0"
+            "credit": "Photo by Jesemeatoutvent / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Los Angeles",
@@ -46,7 +51,8 @@
             "latitude": 34.0536909,
             "longitude": -118.242766,
             "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/LA_View.jpg",
-            "credit": "Photo by AngelFM15 / Wikimedia Commons, CC0"
+            "credit": "Photo by AngelFM15 / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Beijing",
@@ -54,7 +60,8 @@
             "latitude": 40.190632,
             "longitude": 116.412144,
             "image": "https://upload.wikimedia.org/wikipedia/commons/b/b1/Beihucheng_River.jpg",
-            "credit": "Photo by Iming / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Iming / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Dubai",
@@ -62,7 +69,8 @@
             "latitude": 25.0742823,
             "longitude": 55.1885387,
             "image": "https://upload.wikimedia.org/wikipedia/commons/7/79/Brother_wish_to_visit_this_place_with_family_atleast_one_his_lifetime.jpg",
-            "credit": "Photo by Meenu bist / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Meenu bist / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Rome",
@@ -70,15 +78,8 @@
             "latitude": 41.8933203,
             "longitude": 12.4829321,
             "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Images_from_Roma_Project_4017_28.jpg",
-            "credit": "Photo by Wilfredo Rafael Rodriguez Hernandez / Wikimedia Commons, CC0"
-        },
-        {
-            "city": "Berlin",
-            "country": "Germany",
-            "latitude": 52.510885,
-            "longitude": 13.3989367,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/5/50/SonyCenterAtNight.jpg",
-            "credit": "Photo by Andreas Tille / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Wilfredo Rafael Rodriguez Hernandez / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Sydney",
@@ -86,7 +87,8 @@
             "latitude": -33.8698439,
             "longitude": 151.2082848,
             "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Laura_Hale_and_the_APC.jpg",
-            "credit": "Photo by Uploader: Vanished user adhmfdfmykrdyr / Wikimedia Commons, CC BY 2.0"
+            "credit": "Photo by Uploader: Vanished user adhmfdfmykrdyr / Wikimedia Commons, CC BY 2.0",
+            "ai": ""
         },
         {
             "city": "Toronto",
@@ -94,7 +96,8 @@
             "latitude": 43.6534817,
             "longitude": -79.3839347,
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/A_beautiful-looking_Audi_R8_in_the_Audi_exhibit_of_the_2025_Canadian_International_Auto_Show.jpg",
-            "credit": "Photo by BloodbornMe / Wikimedia Commons, CC0"
+            "credit": "Photo by BloodbornMe / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Moscow",
@@ -102,7 +105,8 @@
             "latitude": 55.625578,
             "longitude": 37.6063916,
             "image": "https://upload.wikimedia.org/wikipedia/commons/9/9b/MarHR_Congerence_B-day_Osovitskaya.jpg",
-            "credit": "Photo by Cherevkana / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Cherevkana / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Shanghai",
@@ -110,7 +114,8 @@
             "latitude": 31.2312707,
             "longitude": 121.4700152,
             "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Shanghai_Skyline_2012.jpg",
-            "credit": "Photo by Yourusernamewillbepublic2 / Wikimedia Commons, CC0"
+            "credit": "Photo by Yourusernamewillbepublic2 / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Madrid",
@@ -118,7 +123,8 @@
             "latitude": 40.4167047,
             "longitude": -3.7035825,
             "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/MadreenRoof.jpg",
-            "credit": "Photo by HugoLRH / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by HugoLRH / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Singapore",
@@ -126,7 +132,8 @@
             "latitude": 1.357107,
             "longitude": 103.8194992,
             "image": "https://upload.wikimedia.org/wikipedia/commons/c/cb/2023_Singapur_38.jpg",
-            "credit": "Photo by Iro Bosero / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Iro Bosero / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Seoul",
@@ -134,7 +141,8 @@
             "latitude": 37.5666791,
             "longitude": 126.9782914,
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/August_2007_motel_room_in_Seoul.jpg",
-            "credit": "Photo by Syced / Wikimedia Commons, CC0"
+            "credit": "Photo by Syced / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Istanbul",
@@ -142,7 +150,8 @@
             "latitude": 41.006381,
             "longitude": 28.9758715,
             "image": "https://upload.wikimedia.org/wikipedia/commons/1/1e/Princes_islands_Istanbul.jpg",
-            "credit": "Photo by Fatima ezzahra el bouabi / Wikimedia Commons, CC0"
+            "credit": "Photo by Fatima ezzahra el bouabi / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Mexico City",
@@ -150,7 +159,8 @@
             "latitude": 19.4326296,
             "longitude": -99.1331785,
             "image": "https://upload.wikimedia.org/wikipedia/commons/8/8b/Notre_Dame_de_Chartres_%281908%29.jpg",
-            "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License"
+            "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License",
+            "ai": ""
         },
         {
             "city": "Bangkok",
@@ -158,7 +168,8 @@
             "latitude": 13.7524938,
             "longitude": 100.4935089,
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/Bangkok_Sukhumvit.jpg",
-            "credit": "Photo by Vano111ru / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Vano111ru / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Buenos Aires",
@@ -166,7 +177,8 @@
             "latitude": -34.6083696,
             "longitude": -58.4440583,
             "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Bojovic_u_Argentini_-_panoramio.jpg",
-            "credit": "Photo by Dejan Sekuloski / Wikimedia Commons, CC BY 3.0"
+            "credit": "Photo by Dejan Sekuloski / Wikimedia Commons, CC BY 3.0",
+            "ai": ""
         },
         {
             "city": "Barcelona",
@@ -174,7 +186,8 @@
             "latitude": 41.3825802,
             "longitude": 2.177073,
             "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Bandera_de_Dont_tread_on_me_a_Barcelona..jpg",
-            "credit": "Photo by Aniol / Wikimedia Commons, CC0"
+            "credit": "Photo by Aniol / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Sao Paulo",
@@ -182,15 +195,8 @@
             "latitude": -23.5506507,
             "longitude": -46.6333824,
             "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Sao_Paulo_Railway.jpg",
-            "credit": "Photo by Silvio Tanaka / Wikimedia Commons, CC BY 2.0"
-        },
-        {
-            "city": "Delhi",
-            "country": "India",
-            "latitude": 28.6273928,
-            "longitude": 77.1716954,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/7/7c/Domesticated_geese_at_Delhi_Zoo.jpg",
-            "credit": "Photo by Slyronit / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Silvio Tanaka / Wikimedia Commons, CC BY 2.0",
+            "ai": ""
         },
         {
             "city": "Hong Kong",
@@ -198,7 +204,8 @@
             "latitude": 22.350627,
             "longitude": 114.1849161,
             "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/HKWay-DYK.jpg",
-            "credit": "Photo by Studio Incendo / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Studio Incendo / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Vienna City",
@@ -206,7 +213,8 @@
             "latitude": 6.6782387,
             "longitude": -1.6218709,
             "image": "https://upload.wikimedia.org/wikipedia/commons/9/93/Rathaus_Vienna_June_2006_165.jpg",
-            "credit": "Photo by Gryffindor / Wikimedia Commons, CC BY 2.5"
+            "credit": "Photo by Gryffindor / Wikimedia Commons, CC BY 2.5",
+            "ai": ""
         },
         {
             "city": "Amsterdam",
@@ -214,7 +222,8 @@
             "latitude": 52.3730796,
             "longitude": 4.8924534,
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Woonhuis_Anthony_Reepmaker.jpg",
-            "credit": "Photo by LPEREEPMAKER / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by LPEREEPMAKER / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Washington, D.C.",
@@ -222,15 +231,17 @@
             "latitude": 38.8950368,
             "longitude": -77.0365427,
             "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Allen_0091_Mrs._Jimmy_Doolittle_Stewardess_Loretta_Nazar_and_Cpt._E.jpg._Hamilton_Lee_Christening_a_United_Air_Mainliner.jpg",
-            "credit": "Photo by SDASM Archives / Wikimedia Commons, No restrictions"
+            "credit": "Photo by SDASM Archives / Wikimedia Commons, No restrictions",
+            "ai": ""
         },
         {
             "city": "Prague",
             "country": "Czechia",
             "latitude": 50.0596288,
             "longitude": 14.4464593,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/d/df/3.7.24_2_Prague_21_%2853841964922%29.jpg",
-            "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/1/12/219c_Prague%2C_Aug_1990_%2854231497558%29.jpg",
+            "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License",
+            "ai": ""
         },
         {
             "city": "Copenhagen",
@@ -238,7 +249,8 @@
             "latitude": 55.6867243,
             "longitude": 12.5700724,
             "image": "https://upload.wikimedia.org/wikipedia/commons/a/a3/Denmark_-_Copenhagen_-_NARA_-_68154740.jpg",
-            "credit": "Photo by Lieutnant Crumrine / Wikimedia Commons, Public domain"
+            "credit": "Photo by Lieutnant Crumrine / Wikimedia Commons, Public domain",
+            "ai": ""
         },
         {
             "city": "Milan",
@@ -246,7 +258,8 @@
             "latitude": 45.4641943,
             "longitude": 9.1896346,
             "image": "https://upload.wikimedia.org/wikipedia/commons/e/ed/Caneda.jpg",
-            "credit": "Photo by libero / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by libero / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Stockholm",
@@ -254,7 +267,8 @@
             "latitude": 59.3251172,
             "longitude": 18.0710935,
             "image": "https://upload.wikimedia.org/wikipedia/commons/b/bf/Estocolmo_julio-2025_8.jpg",
-            "credit": "Photo by Gbeltranp / Wikimedia Commons, CC BY 4.0"
+            "credit": "Photo by Gbeltranp / Wikimedia Commons, CC BY 4.0",
+            "ai": ""
         },
         {
             "city": "Jakarta",
@@ -262,7 +276,8 @@
             "latitude": -6.1754049,
             "longitude": 106.827168,
             "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Aliran_Sungai_di_Kota_Besar.jpg",
-            "credit": "Photo by Djae26 / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Djae26 / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Munich",
@@ -270,23 +285,26 @@
             "latitude": 48.1371079,
             "longitude": 11.5753822,
             "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Lichtbild_der_Seite_1_des_Beschlussentwurfs_vom_2021-05-06_14.23.50.jpg",
-            "credit": "Photo by Sgrommer / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Sgrommer / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Zurich",
             "country": "Switzerland",
             "latitude": 47.3744489,
             "longitude": 8.5410422,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/-i---i-_%2850028217151%29.jpg",
-            "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/-i---i-_%2839615738570%29.jpg",
+            "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License",
+            "ai": ""
         },
         {
             "city": "Brussels",
             "country": "Belgium",
             "latitude": 50.8465573,
             "longitude": 4.351697,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/4/48/Sculpture_face_au_Palais_Stoclet_%C3%A0_Bruxelles.jpg",
-            "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e7/BRUXELLES%2C_Parc_L%C3%A9opold_-_Institut_d%27Hygi%C3%A8ne_-_CDK-BADEAUX.jpg",
+            "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License",
+            "ai": ""
         },
         {
             "city": "Johannesburg",
@@ -294,7 +312,8 @@
             "latitude": -26.205,
             "longitude": 28.049722,
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Fourways_Mall_Starbucks.jpeg",
-            "credit": "Photo by TapticInfo / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by TapticInfo / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Warsaw",
@@ -302,7 +321,8 @@
             "latitude": 52.2319581,
             "longitude": 21.0067249,
             "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/Ornatka.jpg",
-            "credit": "Photo by Przemysław Walczak / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Przemysław Walczak / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Budapest",
@@ -310,7 +330,8 @@
             "latitude": 47.4978789,
             "longitude": 19.0402383,
             "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Feed_The_Mogul_performs_rock_in_2022.jpg",
-            "credit": "Photo by Sandor Bikali / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Sandor Bikali / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Lisbon",
@@ -318,7 +339,8 @@
             "latitude": 38.7077507,
             "longitude": -9.1365919,
             "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Antifascists_making_middle_finger_gestures_to_neonazi_group_in_Lisbon.jpg",
-            "credit": "Photo by Lua Eva Blue / Wikimedia Commons, CC BY 4.0"
+            "credit": "Photo by Lua Eva Blue / Wikimedia Commons, CC BY 4.0",
+            "ai": ""
         },
         {
             "city": "Vancouver",
@@ -326,7 +348,8 @@
             "latitude": 49.2608724,
             "longitude": -123.113952,
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/01/19th_Gladstone_01_-_panoramio.jpg",
-            "credit": "Photo by Dracunculus / Wikimedia Commons, CC BY-SA 3.0"
+            "credit": "Photo by Dracunculus / Wikimedia Commons, CC BY-SA 3.0",
+            "ai": ""
         },
         {
             "city": "Doha",
@@ -334,7 +357,8 @@
             "latitude": 25.2856329,
             "longitude": 51.5264162,
             "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Doha_afar..._-_panoramio.jpg",
-            "credit": "Photo by Remy Swaab / Wikimedia Commons, CC BY-SA 3.0"
+            "credit": "Photo by Remy Swaab / Wikimedia Commons, CC BY-SA 3.0",
+            "ai": ""
         },
         {
             "city": "Abu Dhabi",
@@ -342,7 +366,8 @@
             "latitude": 24.4538352,
             "longitude": 54.3774014,
             "image": "https://upload.wikimedia.org/wikipedia/commons/8/82/Jumeirah_at_Saadiyat_Island_Resort_-_Abu_dhabi.jpg",
-            "credit": "Photo by Shaun D'Rozario / Wikimedia Commons, CC0"
+            "credit": "Photo by Shaun D'Rozario / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Riyadh",
@@ -350,7 +375,8 @@
             "latitude": 24.638916,
             "longitude": 46.7160104,
             "image": "https://upload.wikimedia.org/wikipedia/commons/a/aa/Bus_stop_in_Riyadh2.jpg",
-            "credit": "Photo by Ashashyou / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Ashashyou / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Auckland",
@@ -358,7 +384,8 @@
             "latitude": -36.852095,
             "longitude": 174.7631803,
             "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Photos_38099_extralarge.jpg",
-            "credit": "Photo by Whites Aviation / Wikimedia Commons, CC BY 4.0"
+            "credit": "Photo by Whites Aviation / Wikimedia Commons, CC BY 4.0",
+            "ai": ""
         },
         {
             "city": "Oslo City",
@@ -366,7 +393,8 @@
             "latitude": 59.912678,
             "longitude": 10.7523895,
             "image": "https://upload.wikimedia.org/wikipedia/commons/a/a9/Oslocentrum.jpg",
-            "credit": "Photo by Of / Wikimedia Commons, Public domain"
+            "credit": "Photo by Of / Wikimedia Commons, Public domain",
+            "ai": ""
         },
         {
             "city": "Helsinki",
@@ -374,7 +402,8 @@
             "latitude": 60.1674881,
             "longitude": 24.9427473,
             "image": "https://upload.wikimedia.org/wikipedia/commons/b/b8/View_from_the_Helsinki_Olympic_Stadium_tower2.jpg",
-            "credit": "Photo by Óðinn / Wikimedia Commons, CC BY-SA 2.5 ca"
+            "credit": "Photo by Óðinn / Wikimedia Commons, CC BY-SA 2.5 ca",
+            "ai": ""
         },
         {
             "city": "Manila",
@@ -382,7 +411,8 @@
             "latitude": 14.5904492,
             "longitude": 120.9803621,
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/4a/Fruitstand-manila.jpg",
-            "credit": "Photo by (WT-shared) Texugo at  wts wikivoyage / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by (WT-shared) Texugo at  wts wikivoyage / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Nairobi",
@@ -390,7 +420,8 @@
             "latitude": -1.3026148,
             "longitude": 36.828842,
             "image": "https://upload.wikimedia.org/wikipedia/commons/7/75/Installing_water_pipes_2.jpg",
-            "credit": "Photo by Mungai Kiroga / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Mungai Kiroga / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Casablanca",
@@ -398,7 +429,8 @@
             "latitude": 33.5945144,
             "longitude": -7.6200284,
             "image": "https://upload.wikimedia.org/wikipedia/commons/d/d6/Casa_didier55_021.jpg",
-            "credit": "Photo by Dr. Didier Hinz / Wikimedia Commons, CC BY-SA 3.0"
+            "credit": "Photo by Dr. Didier Hinz / Wikimedia Commons, CC BY-SA 3.0",
+            "ai": ""
         },
         {
             "city": "Cape Town",
@@ -406,7 +438,8 @@
             "latitude": -33.9288301,
             "longitude": 18.4172197,
             "image": "https://upload.wikimedia.org/wikipedia/commons/b/b4/African_Barber_-_Cape_Town_-_2012_-_Photo_01.jpg",
-            "credit": "Photo by Pierre F. Lombard / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Pierre F. Lombard / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Lagos",
@@ -414,7 +447,8 @@
             "latitude": 6.4550575,
             "longitude": 3.3941795,
             "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/Windy_City.jpg",
-            "credit": "Photo by Swantata / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Swantata / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Santiago",
@@ -422,15 +456,8 @@
             "latitude": 9.8694792,
             "longitude": -83.7980749,
             "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Santiaguinos_en_las_calles_el_viernes_18_de_octubre_de_2019.jpg",
-            "credit": "Photo by Dcarrascoisamit / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "Bogota",
-            "country": "Colombia",
-            "latitude": 4.6534109,
-            "longitude": -74.0836547,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/BogotaBoroughHall.jpg",
-            "credit": "Photo by KForce at en.wikipedia / Wikimedia Commons, CC BY-SA 3.0"
+            "credit": "Photo by Dcarrascoisamit / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Lima",
@@ -438,7 +465,8 @@
             "latitude": -12.0621065,
             "longitude": -77.0365256,
             "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Snail_in_Lima_Peru_13_56_52_479000.jpeg",
-            "credit": "Photo by Grandmaster Huon / Wikimedia Commons, CC0"
+            "credit": "Photo by Grandmaster Huon / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Caracas",
@@ -446,15 +474,17 @@
             "latitude": 10.5060934,
             "longitude": -66.9146008,
             "image": "https://upload.wikimedia.org/wikipedia/commons/2/23/Caracas_cerca_Plaza_Venezuela.JPG",
-            "credit": "Photo by Ricardo Juliao / Wikimedia Commons, CC BY-SA 3.0"
+            "credit": "Photo by Ricardo Juliao / Wikimedia Commons, CC BY-SA 3.0",
+            "ai": ""
         },
         {
             "city": "Montreal",
             "country": "Canada",
             "latitude": 45.5031824,
             "longitude": -73.5698065,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/4/47/Alleyway_Dinosaurs_%2835320869543%29.jpg",
-            "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/%22Free_Chelsea_Manning%22_Poster_%2831874448070%29.jpg",
+            "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License",
+            "ai": ""
         },
         {
             "city": "Philadelphia",
@@ -462,7 +492,8 @@
             "latitude": 39.9527237,
             "longitude": -75.1635262,
             "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Cynwd_Heritage_Trail.jpg",
-            "credit": "Photo by Gabby1717 / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Gabby1717 / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Atlanta City",
@@ -470,7 +501,8 @@
             "latitude": 33.7486217,
             "longitude": -84.3907809,
             "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/Slave_Market-Atlanta_Georgia_1864.jpg",
-            "credit": "Photo by George N. Barnard / Wikimedia Commons, Public domain"
+            "credit": "Photo by George N. Barnard / Wikimedia Commons, Public domain",
+            "ai": ""
         },
         {
             "city": "Houston",
@@ -478,7 +510,8 @@
             "latitude": 29.7589382,
             "longitude": -95.3676974,
             "image": "https://upload.wikimedia.org/wikipedia/commons/7/7a/Bijou_Galerie_and_Studio_-_panoramio.jpg",
-            "credit": "Photo by Akil Head / Wikimedia Commons, CC BY-SA 3.0"
+            "credit": "Photo by Akil Head / Wikimedia Commons, CC BY-SA 3.0",
+            "ai": ""
         },
         {
             "city": "Dallas",
@@ -486,7 +519,8 @@
             "latitude": 32.7762719,
             "longitude": -96.7968559,
             "image": "https://upload.wikimedia.org/wikipedia/commons/1/11/View_of_Dallas_from_Reunion_Tower_August_2015_13.jpg",
-            "credit": "Photo by Michael Barera / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Michael Barera / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Miami",
@@ -494,15 +528,8 @@
             "latitude": 25.7741728,
             "longitude": -80.19362,
             "image": "https://upload.wikimedia.org/wikipedia/commons/9/95/North_View_of_Miami_and_Miami_River_from_1st_St_20160709_1.jpg",
-            "credit": "Photo by DXR / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "Seattle City",
-            "country": "United States",
-            "latitude": 47.6177084,
-            "longitude": -122.3444624,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/e/eb/Seattle_skyline_2021.jpg",
-            "credit": "Photo by GyozaDumpling / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by DXR / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "San Diego",
@@ -510,7 +537,8 @@
             "latitude": 32.7174202,
             "longitude": -117.162772,
             "image": "https://upload.wikimedia.org/wikipedia/commons/f/fc/ZLAC_1900_San_Diego_Bay.jpg",
-            "credit": "Photo by Unknown authorUnknown author / Wikimedia Commons, Public domain"
+            "credit": "Photo by Unknown authorUnknown author / Wikimedia Commons, Public domain",
+            "ai": ""
         },
         {
             "city": "Detroit",
@@ -518,15 +546,8 @@
             "latitude": 42.3315509,
             "longitude": -83.0466403,
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/03/Detroir-from-Windsor-2025-04-02.jpg",
-            "credit": "Photo by Wendolph / Wikimedia Commons, CC0"
-        },
-        {
-            "city": "Denver City",
-            "country": "United States",
-            "latitude": 32.9679571,
-            "longitude": -102.8293851,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Full_Denver_skyline.jpg",
-            "credit": "Photo by Flickr / Wikimedia Commons, CC BY 2.0"
+            "credit": "Photo by Wendolph / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Charlotte",
@@ -534,7 +555,8 @@
             "latitude": 35.2272086,
             "longitude": -80.8430827,
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Windmuehle_Charlotte_msu-7480.jpg",
-            "credit": "Photo by Matthias Süßen / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Matthias Süßen / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Kuala Lumpur",
@@ -542,7 +564,8 @@
             "latitude": 3.1526589,
             "longitude": 101.7022205,
             "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Bukit_Bintang_2021.jpg",
-            "credit": "Photo by LegendaryLim / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by LegendaryLim / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Hanoi",
@@ -550,7 +573,8 @@
             "latitude": 21.0283334,
             "longitude": 105.854041,
             "image": "https://upload.wikimedia.org/wikipedia/commons/1/1a/August_2003_Hanoi.jpg",
-            "credit": "Photo by Syced / Wikimedia Commons, CC0"
+            "credit": "Photo by Syced / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Ho Chi Minh City",
@@ -558,7 +582,8 @@
             "latitude": 10.7763897,
             "longitude": 106.7011391,
             "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Buildings_in_Sala_City.jpg",
-            "credit": "Photo by Xuanphuocle / Wikimedia Commons, CC BY 4.0"
+            "credit": "Photo by Xuanphuocle / Wikimedia Commons, CC BY 4.0",
+            "ai": ""
         },
         {
             "city": "Lahore",
@@ -566,7 +591,8 @@
             "latitude": 31.5656822,
             "longitude": 74.3141829,
             "image": "https://upload.wikimedia.org/wikipedia/commons/c/ce/Gurudwara_Signboard.jpg",
-            "credit": "Photo by Mandeepchahal789 / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Mandeepchahal789 / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Karachi",
@@ -574,7 +600,8 @@
             "latitude": 24.8546842,
             "longitude": 67.0207055,
             "image": "https://upload.wikimedia.org/wikipedia/commons/c/c0/Fire_Game.JPG",
-            "credit": "Photo by Sherbaz jamaldini / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Sherbaz jamaldini / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Hyderabad",
@@ -582,7 +609,8 @@
             "latitude": 17.360589,
             "longitude": 78.4740613,
             "image": "https://upload.wikimedia.org/wikipedia/commons/3/37/Wave_Rock_Sez_Hyderabad.jpg",
-            "credit": "Photo by Kavali Chandrakanth KCK / Wikimedia Commons, CC0"
+            "credit": "Photo by Kavali Chandrakanth KCK / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Chennai",
@@ -590,7 +618,8 @@
             "latitude": 13.0836939,
             "longitude": 80.270186,
             "image": "https://upload.wikimedia.org/wikipedia/commons/8/86/Royapettah_Clock_Tower.jpg",
-            "credit": "Photo by Rasnaboy / Wikimedia Commons, CC0"
+            "credit": "Photo by Rasnaboy / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Pune",
@@ -598,7 +627,8 @@
             "latitude": 18.5213738,
             "longitude": 73.8545071,
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Poona-club_0.jpg",
-            "credit": "Photo by Clifton & Co. Mumbai / Wikimedia Commons, CC BY 4.0"
+            "credit": "Photo by Clifton & Co. Mumbai / Wikimedia Commons, CC BY 4.0",
+            "ai": ""
         },
         {
             "city": "Brisbane",
@@ -606,7 +636,8 @@
             "latitude": -27.4689623,
             "longitude": 153.0235009,
             "image": "https://upload.wikimedia.org/wikipedia/commons/b/b6/Bribie_River_-_Flickr_-_gailhampshire.jpg",
-            "credit": "Photo by gailhampshire from Cradley, Malvern, U.K / Wikimedia Commons, CC BY 2.0"
+            "credit": "Photo by gailhampshire from Cradley, Malvern, U.K / Wikimedia Commons, CC BY 2.0",
+            "ai": ""
         },
         {
             "city": "Perth",
@@ -614,7 +645,8 @@
             "latitude": -31.9558967,
             "longitude": 115.8605784,
             "image": "https://upload.wikimedia.org/wikipedia/commons/9/90/Man_waiting_for_ferry_while_looking_at_Perth_Skyline.jpg",
-            "credit": "Photo by Yourusernamewillbepublic2 / Wikimedia Commons, CC0"
+            "credit": "Photo by Yourusernamewillbepublic2 / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Melbourne",
@@ -622,15 +654,8 @@
             "latitude": -37.8142454,
             "longitude": 144.9631732,
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/0d/Doncaster_Sunset_Panorama.jpg",
-            "credit": "Photo by Wanderingchina / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "Adelaide City",
-            "country": "Australia",
-            "latitude": -34.9281805,
-            "longitude": 138.5999312,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/1/10/Zebras_Ngorongoro_Crater.jpg",
-            "credit": "Photo by Muhammad Mahdi Karim / Wikimedia Commons, GFDL 1.2"
+            "credit": "Photo by Wanderingchina / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Edinburgh",
@@ -638,7 +663,8 @@
             "latitude": 55.9533456,
             "longitude": -3.1883749,
             "image": "https://upload.wikimedia.org/wikipedia/commons/c/c9/Bridgend_Farmhouse_East_side.jpg",
-            "credit": "Photo by Willg3310 / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Willg3310 / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Belfast",
@@ -646,7 +672,8 @@
             "latitude": 54.5975804,
             "longitude": -5.9277097,
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/0a/Agnes_street_nearing_Crumlin_Road_-_geograph.org.uk_-_7257948.jpg",
-            "credit": "Photo by Colin Pyle  / Wikimedia Commons, CC BY-SA 2.0"
+            "credit": "Photo by Colin Pyle  / Wikimedia Commons, CC BY-SA 2.0",
+            "ai": ""
         },
         {
             "city": "Glasgow",
@@ -654,7 +681,8 @@
             "latitude": 55.861155,
             "longitude": -4.2501687,
             "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/A_Glasgow_Backcourt_Late_Evening_-_panoramio.jpg",
-            "credit": "Photo by dan kearney / Wikimedia Commons, CC BY-SA 3.0"
+            "credit": "Photo by dan kearney / Wikimedia Commons, CC BY-SA 3.0",
+            "ai": ""
         },
         {
             "city": "Dublin",
@@ -662,7 +690,8 @@
             "latitude": 53.3493795,
             "longitude": -6.2605593,
             "image": "https://upload.wikimedia.org/wikipedia/commons/a/a1/Alexandra_Dock_and_Odlums_Silos_-_geograph.org.uk_-_5196604.jpg",
-            "credit": "Photo by David Dixon  / Wikimedia Commons, CC BY-SA 2.0"
+            "credit": "Photo by David Dixon  / Wikimedia Commons, CC BY-SA 2.0",
+            "ai": ""
         },
         {
             "city": "Reykjavik",
@@ -670,7 +699,8 @@
             "latitude": 64.145981,
             "longitude": -21.9422367,
             "image": "https://upload.wikimedia.org/wikipedia/commons/f/fd/Oil_depot_on_Reykjavik_port.jpg",
-            "credit": "Photo by Syced / Wikimedia Commons, CC0"
+            "credit": "Photo by Syced / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Tallinn",
@@ -678,7 +708,8 @@
             "latitude": 59.4372155,
             "longitude": 24.7453688,
             "image": "https://upload.wikimedia.org/wikipedia/commons/1/19/Vanalinn_Patkuli_platvormilt_2013.jpg",
-            "credit": "Photo by Ivar Leidus / Wikimedia Commons, CC BY-SA 3.0 ee"
+            "credit": "Photo by Ivar Leidus / Wikimedia Commons, CC BY-SA 3.0 ee",
+            "ai": ""
         },
         {
             "city": "Riga",
@@ -686,7 +717,8 @@
             "latitude": 56.9493977,
             "longitude": 24.1051846,
             "image": "https://upload.wikimedia.org/wikipedia/commons/c/c1/Riga_Secondary_School_No.23.jpg",
-            "credit": "Photo by АнИгМа / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by АнИгМа / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Vilnius City",
@@ -694,15 +726,17 @@
             "latitude": 54.6870458,
             "longitude": 25.2829111,
             "image": "https://upload.wikimedia.org/wikipedia/commons/5/54/Vilnius_skyline_by_Augustas_Didzgalvis.jpg",
-            "credit": "Photo by BigHead / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by BigHead / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Belgrade",
             "country": "Serbia",
             "latitude": 44.8178131,
             "longitude": 20.4568974,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/8/89/Detalji_u_Beogradu_%287%29.jpg",
-            "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Detalji_u_Beogradu_%281%29.jpg",
+            "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License",
+            "ai": ""
         },
         {
             "city": "Bucharest",
@@ -710,7 +744,8 @@
             "latitude": 44.4361414,
             "longitude": 26.1027202,
             "image": "https://upload.wikimedia.org/wikipedia/commons/7/73/Protest_Bucharest_15_June.jpg",
-            "credit": "Photo by RAMSES$44932 / Wikimedia Commons, CC0"
+            "credit": "Photo by RAMSES$44932 / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Sofia",
@@ -718,7 +753,8 @@
             "latitude": 42.6977028,
             "longitude": 23.3217359,
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/0e/Detail_of_the_National_Theatre_of_Bulgaria.jpg",
-            "credit": "Photo by Hakuna.Matata / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Hakuna.Matata / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Tbilisi",
@@ -726,7 +762,8 @@
             "latitude": 41.6934591,
             "longitude": 44.8014495,
             "image": "https://upload.wikimedia.org/wikipedia/commons/2/24/Houses_and_Buildings_in_Tbilisi_-_city_View_-_Georgia_Travel_And_Tourism_14.jpg",
-            "credit": "Photo by Mostafameraji / Wikimedia Commons, CC BY-SA 3.0"
+            "credit": "Photo by Mostafameraji / Wikimedia Commons, CC BY-SA 3.0",
+            "ai": ""
         },
         {
             "city": "Yerevan City",
@@ -734,7 +771,8 @@
             "latitude": 40.2203523,
             "longitude": 44.4930171,
             "image": "https://upload.wikimedia.org/wikipedia/commons/8/8a/Mount_Ararat_and_the_Yerevan_skyline.jpg",
-            "credit": "Photo by Սէրուժ Ուրիշեան (Serouj Ourishian) / Wikimedia Commons, CC BY-SA 3.0"
+            "credit": "Photo by Սէրուժ Ուրիշեան (Serouj Ourishian) / Wikimedia Commons, CC BY-SA 3.0",
+            "ai": ""
         },
         {
             "city": "Baku",
@@ -742,7 +780,8 @@
             "latitude": 40.3755885,
             "longitude": 49.8328009,
             "image": "https://upload.wikimedia.org/wikipedia/commons/3/3a/Jazz_And_Warm_Tea_-_panoramio.jpg",
-            "credit": "Photo by M. PINARCI / Wikimedia Commons, CC BY-SA 3.0"
+            "credit": "Photo by M. PINARCI / Wikimedia Commons, CC BY-SA 3.0",
+            "ai": ""
         },
         {
             "city": "Almaty",
@@ -750,7 +789,8 @@
             "latitude": 43.2363924,
             "longitude": 76.9457275,
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/0b/The_canyon_of_the_kazakh_steppe.jpg",
-            "credit": "Photo by Ali-mukhamet / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Ali-mukhamet / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Cleveland",
@@ -758,7 +798,8 @@
             "latitude": 41.4996574,
             "longitude": -81.6936772,
             "image": "https://upload.wikimedia.org/wikipedia/commons/2/26/Cleveland_va_december_2010.JPG",
-            "credit": "Photo by ElleMDee / Wikimedia Commons, CC BY-SA 3.0"
+            "credit": "Photo by ElleMDee / Wikimedia Commons, CC BY-SA 3.0",
+            "ai": ""
         },
         {
             "city": "Watertown, MA",
@@ -766,7 +807,8 @@
             "latitude": 42.3652518,
             "longitude": -71.1843236,
             "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Sawins_Pond_in_Watertown_MA_Oct_2024_3.jpg",
-            "credit": "Photo by 4300streetcar / Wikimedia Commons, CC BY 4.0"
+            "credit": "Photo by 4300streetcar / Wikimedia Commons, CC BY 4.0",
+            "ai": ""
         },
         {
             "city": "New York",
@@ -774,15 +816,8 @@
             "latitude": 40.7127281,
             "longitude": -74.0060152,
             "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Training_Session_By_Icmsinc_in_Syracuse_NY.jpg",
-            "credit": "Photo by Icmsinc / Wikimedia Commons, CC BY 4.0"
-        },
-        {
-            "city": "Zarafshan",
-            "country": "Uzbekistan",
-            "latitude": 41.5719274,
-            "longitude": 64.1961296,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Zarafshan_river_near_Panjakent_-_02.jpg",
-            "credit": "Photo by Satdeep Gill / Wikimedia Commons, CC BY 4.0"
+            "credit": "Photo by Icmsinc / Wikimedia Commons, CC BY 4.0",
+            "ai": ""
         },
         {
             "city": "Osaka",
@@ -790,7 +825,8 @@
             "latitude": 34.6937569,
             "longitude": 135.5014539,
             "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Clock_in_Osaka.jpg",
-            "credit": "Photo by Syced / Wikimedia Commons, CC0"
+            "credit": "Photo by Syced / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Algeria",
@@ -798,7 +834,8 @@
             "latitude": 28.0000272,
             "longitude": 2.9999825,
             "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Chahids_de_Larhat.jpg",
-            "credit": "Photo by Zenetian / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Zenetian / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         },
         {
             "city": "Taipei",
@@ -806,7 +843,8 @@
             "latitude": 25.0375198,
             "longitude": 121.5636796,
             "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/October_2005_Taipei_6.jpg",
-            "credit": "Photo by Syced / Wikimedia Commons, CC0"
+            "credit": "Photo by Syced / Wikimedia Commons, CC0",
+            "ai": ""
         },
         {
             "city": "Durango",
@@ -814,7 +852,8 @@
             "latitude": 24.833333,
             "longitude": -104.833333,
             "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Jaizale_txistulari_taldea.jpg",
-            "credit": "Photo by Wikimaribarre / Wikimedia Commons, CC BY-SA 4.0"
+            "credit": "Photo by Wikimaribarre / Wikimedia Commons, CC BY-SA 4.0",
+            "ai": ""
         }
     ]
 }
