@@ -5,4 +5,7 @@ print(cities)
 random_image = main.grab_random_city(cities)
 print(random_image)
 image = random_image.get('image')
+
+main.clear_console()
+
 print(image)

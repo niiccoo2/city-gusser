@@ -79,5 +79,3 @@ def main():
         else:
             print("Failed to understand guess.")
 
-main()
-
