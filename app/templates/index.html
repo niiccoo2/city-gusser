@@ -1,12 +1,11 @@
-<!doctype html>
+{% extends "base.html" %}
+
+{% block content %}
 <html>
-    <head>
-        <link rel="shortcut icon" href="static/favicon.ico">
-        <title>City Gusser</title>
-    </head>
     <body>
         <h1>Hello, {{ user.username }}!</h1>
         <img src="{{ image }}" height="250" width="500">
         <h1>{{ blurb }}</h1>
     </body>
 </html>
+{% endblock %}
