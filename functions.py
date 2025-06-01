@@ -109,15 +109,20 @@ def compare_city(city1, city2, mode, filepath = "./photos-database-scraper.json"
 
             if mode == "dir":
                 if abs(city_lon - guess_lon) > abs(city_lat - guess_lat):
-                    if city_lon > guess_lon:
-                        output = "West"  # Flipped from East
+                    if guess_lon > city_lon:
+                        output = "East"
                     else:
-                        output = "East"  # Flipped from West
-                elif mode == "cardinal":
-                    if city_lat > guess_lat:
+                        output = "West"
+                else:
+                    if guess_lat > city_lat:
                         output = "North"
                     else:
                         output = "South"
+            elif mode == "cardinal":
+                if guess_lat > city_lat:
+                    output = "North"
+                else:
+                    output = "South"
             else:
                 if abs((guess_lon + guess_lat) - (city_lon + city_lat)) < 20:
                     output = "Yellow"
