@@ -1,388 +1,828 @@
 {
     "cities": [
         {
+            "city": "Tokyo",
+            "country": "Japan",
+            "latitude": 35.6768601,
+            "longitude": 139.7638947,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tokyo_Tower_at_night_%281%29.jpg",
+            "credit": "Photo by Melv_L - MACASR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
             "city": "Boston",
-            "country": "USA",
-            "lat": 42.3601,
-            "lon": -71.0589,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Fenway_Park_night_game.JPG/330px-Fenway_Park_night_game.JPG",
-            "credit": "Photo by King of Hearts / Wikimedia Commons, CC BY-SA 3.0"
+            "country": "United States",
+            "latitude": 42.3554334,
+            "longitude": -71.060511,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Boston_Back_Bay_reflection.jpg/250px-Boston_Back_Bay_reflection.jpg",
+            "credit": "Photo by Robbie Shade / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
-            "city": "Chicago",
-            "country": "USA",
-            "lat": 41.8781,
-            "lon": -87.6298,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/55/Navy_Pier_NW.jpg/330px-Navy_Pier_NW.jpg",
-            "credit": "Photo by Jimmy Emerson, DVM / Wikimedia Commons, CC BY-NC-ND 2.0"
-        },
-        {
-            "city": "New York",
-            "country": "USA",
-            "lat": 40.7128,
-            "lon": -74.006,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/ba/New_york_times_square-terabass_%28cropped%29.jpg/250px-New_york_times_square-terabass_%28cropped%29.jpg",
-            "credit": "Photo by Eric Fischer / Wikimedia Commons, CC BY 2.0"
-        },
-        {
-            "city": "San Francisco",
-            "country": "USA",
-            "lat": 37.7749,
-            "lon": -122.4194,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Alcatraz_2021.jpg/500px-Alcatraz_2021.jpg",
-            "credit": "Photo by Joe Mabel / Wikimedia Commons, CC BY-SA 3.0"
-        },
-        {
-            "city": "Los Angeles",
-            "country": "USA",
-            "lat": 34.0522,
-            "lon": -118.2437,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Los_Angeles_City_Hall_2013_%28cropped%29.jpg/330px-Los_Angeles_City_Hall_2013_%28cropped%29.jpg",
-            "credit": "Photo by David Shankbone / Wikimedia Commons, CC BY 3.0"
-        },
-        {
-            "city": "Seattle",
-            "country": "USA",
-            "lat": 47.6062,
-            "lon": -122.3321,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/Amazon_Spheres_from_6th_Avenue%2C_April_2020.jpg/330px-Amazon_Spheres_from_6th_Avenue%2C_April_2020.jpg",
-            "credit": "Photo by Matthias Süßen / Wikimedia Commons, CC BY-SA 4.0"
+            "city": "New York City",
+            "country": "United States",
+            "latitude": 40.7127281,
+            "longitude": -74.0060152,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Times_Square%2C_Broadway%2C_May_2016.jpg/250px-Times_Square%2C_Broadway%2C_May_2016.jpg",
+            "credit": "Photo by Peter K Burian / Wikimedia Commons, CC BY-SA 4.0"
         },
         {
             "city": "London",
             "country": "United Kingdom",
-            "lat": 51.5074,
-            "lon": -0.1278,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8b/Westminster_Abbey_St_Peter.jpg/250px-Westminster_Abbey_St_Peter.jpg",
-            "credit": "Photo by David Iliff / Wikimedia Commons, CC BY-SA 3.0"
+            "latitude": 51.5074456,
+            "longitude": -0.1277653,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/050114_2495_london_city.jpg",
+            "credit": "Photo by Joe D / Wikimedia Commons, CC BY-SA 3.0"
         },
         {
             "city": "Paris",
             "country": "France",
-            "lat": 48.8566,
-            "lon": 2.3522,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Arc_de_Triomphe_HDR_2007.jpg/330px-Arc_de_Triomphe_HDR_2007.jpg",
-            "credit": "Photo by Thierry Ehrmann / Wikimedia Commons, CC BY 2.0"
+            "latitude": 48.8534951,
+            "longitude": 2.3483915,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/UNESCO_Paris.JPG",
+            "credit": "Photo by Alf van Beem / Wikimedia Commons, CC0 1.0 Universal"
         },
         {
-            "city": "Tokyo",
-            "country": "Japan",
-            "lat": 35.6895,
-            "lon": 139.6917,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/1d/Tokyo-STA_Marunouchi-Entrance_2023.jpg/330px-Tokyo-STA_Marunouchi-Entrance_2023.jpg",
-            "credit": "Photo by Rs1421 / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "Sydney",
-            "country": "Australia",
-            "lat": -33.8688,
-            "lon": 151.2093,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg/500px-Sydney_Opera_House_and_Harbour_Bridge_Dusk_%282%29_2019-06-21.jpg",
-            "credit": "Photo by Kgbo / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "Rio de Janeiro",
-            "country": "Brazil",
-            "lat": -22.9068,
-            "lon": -43.1729,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Centro_do_Rio_visto_do_museu_ch%C3%A1cara_do_c%C3%A9u.jpg/500px-Centro_do_Rio_visto_do_museu_ch%C3%A1cara_do_c%C3%A9u.jpg",
-            "credit": "Photo by Rafael Defavari / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "Berlin",
-            "country": "Germany",
-            "lat": 52.52,
-            "lon": 13.405,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Berlin_-_Reichstag_-_2020.jpg/330px-Berlin_-_Reichstag_-_2020.jpg",
-            "credit": "Photo by Ansgar Koreng / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "Cape Town",
-            "country": "South Africa",
-            "lat": -33.9249,
-            "lon": 18.4241,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/de/Bo-Kaap_from_roof_of_Strand_South_hotel%2C_Cape_Town.jpg/330px-Bo-Kaap_from_roof_of_Strand_South_hotel%2C_Cape_Town.jpg",
-            "credit": "Photo by Discott / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "Moscow",
-            "country": "Russia",
-            "lat": 55.7558,
-            "lon": 37.6173,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/02/Cathedral_of_Christ_the_Saviour-1.jpg/250px-Cathedral_of_Christ_the_Saviour-1.jpg",
-            "credit": "Photo by Ludvig14 / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "Dubai",
-            "country": "United Arab Emirates",
-            "lat": 25.2048,
-            "lon": 55.2708,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f1/Burj_Al_Arab_%40_Madinat_Jumeirah_%40_Dubai_%2815851725086%29.jpg/330px-Burj_Al_Arab_%40_Madinat_Jumeirah_%40_Dubai_%2815851725086%29.jpg",
-            "credit": "Photo by Werner Kunz / Wikimedia Commons, CC BY-SA 2.0"
-        },
-        {
-            "city": "Toronto",
-            "country": "Canada",
-            "lat": 43.6532,
-            "lon": -79.3832,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Toronto_-_ON_-_Humber_Bay_und_Humber_Bay_Arch_Bridge.jpg/330px-Toronto_-_ON_-_Humber_Bay_und_Humber_Bay_Arch_Bridge.jpg",
-            "credit": "Photo by Taxiarchos228 / Wikimedia Commons, CC BY-SA 3.0"
-        },
-        {
-            "city": "Mexico City",
-            "country": "Mexico",
-            "lat": 19.4326,
-            "lon": -99.1332,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/00/Angel-de-la-Independencia--Mexico-D.F.jpg/250px-Angel-de-la-Independencia--Mexico-D.F.jpg",
-            "credit": "Photo by Thelmadatter / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "Buenos Aires",
-            "country": "Argentina",
-            "lat": -34.6037,
-            "lon": -58.3816,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/8f/Caminito_en_Buenos_Aires_%2831408%29.jpg/250px-Caminito_en_Buenos_Aires_%2831408%29.jpg",
-            "credit": "Photo by Luis Argerich / Wikimedia Commons, CC BY 2.0"
-        },
-        {
-            "city": "Bangkok",
-            "country": "Thailand",
-            "lat": 13.7563,
-            "lon": 100.5018,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/7/7d/4Y1A1159_Bangkok_%2833536795515%29.jpg/500px-4Y1A1159_Bangkok_%2833536795515%29.jpg",
-            "credit": "Photo by Hdamm / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "Madrid",
-            "country": "Spain",
-            "lat": 40.4168,
-            "lon": -3.7038,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/14/Madrid_-_Sky_Bar_360%C2%BA_%28Hotel_Riu_Plaza_Espa%C3%B1a%29%2C_vistas_19.jpg/500px-Madrid_-_Sky_Bar_360%C2%BA_%28Hotel_Riu_Plaza_Espa%C3%B1a%29%2C_vistas_19.jpg",
-            "credit": "Photo by Luis García / Wikimedia Commons, CC BY-SA 3.0"
-        },
-        {
-            "city": "Rome",
-            "country": "Italy",
-            "lat": 41.9028,
-            "lon": 12.4964,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/20/Rom_Colosseum_Sept_2021_3.jpg/330px-Rom_Colosseum_Sept_2021_3.jpg",
-            "credit": "Photo by Berthold Werner / Wikimedia Commons, CC BY-SA 3.0"
-        },
-        {
-            "city": "Istanbul",
-            "country": "Turkey",
-            "lat": 41.0082,
-            "lon": 28.9784,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cb/Historical_peninsula_and_modern_skyline_of_Istanbul.jpg/500px-Historical_peninsula_and_modern_skyline_of_Istanbul.jpg",
-            "credit": "Photo by A.Savin / Wikimedia Commons, FAL"
-        },
-        {
-            "city": "Seoul",
-            "country": "South Korea",
-            "lat": 37.5665,
-            "lon": 126.978,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Seoul_%28175734251%29_%28cropped%29.jpg/500px-Seoul_%28175734251%29_%28cropped%29.jpg",
-            "credit": "Photo by travel oriented / Wikimedia Commons, CC BY-SA 2.0"
-        },
-        {
-            "city": "Lagos",
-            "country": "Nigeria",
-            "lat": 6.5244,
-            "lon": 3.3792,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/12/Lagos_skyline.jpg/500px-Lagos_skyline.jpg",
-            "credit": "Photo by Ulf Ryttgens / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "Jakarta",
-            "country": "Indonesia",
-            "lat": -6.2088,
-            "lon": 106.8456,
-            "image": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a2/Jakarta_Indonesia_National-Monument-02.jpg/250px-Jakarta_Indonesia_National-Monument-02.jpg",
-            "credit": "Photo by Gunawan Kartapranata / Wikimedia Commons, CC BY-SA 3.0"
-        },
-        {
-            "city": "Lisbon",
-            "country": "Portugal",
-            "lat": 38.7223,
-            "lon": -9.1393,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/Belem_-_Padrao_dos_Descobrimentos.jpg/250px-Belem_-_Padrao_dos_Descobrimentos.jpg",
-            "credit": "Photo by Alvesgaspar / Wikimedia Commons, CC BY-SA 3.0"
-        },
-        {
-            "city": "Hanoi",
-            "country": "Vietnam",
-            "lat": 21.0285,
-            "lon": 105.8542,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/52/Hanoi_Opera_House%2C_24_December_2016.jpg/330px-Hanoi_Opera_House%2C_24_December_2016.jpg",
-            "credit": "Photo by Bùi Thụy Đào Nguyên / Wikimedia Commons, CC BY-SA 3.0"
-        },
-        {
-            "city": "Auckland",
-            "country": "New Zealand",
-            "lat": -36.8485,
-            "lon": 174.7633,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/98/Auckland_Art_Gallery_-_Kitchener_Street.jpg/250px-Auckland_Art_Gallery_-_Kitchener_Street.jpg",
-            "credit": "Photo by Dan Freeman / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
-            "city": "New Delhi",
-            "country": "India",
-            "lat": 28.6139,
-            "lon": 77.209,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/fe/Forecourt%2C_Rashtrapati_Bhavan_-_1.jpg/500px-Forecourt%2C_Rashtrapati_Bhavan_-_1.jpg",
-            "credit": "Photo by Sudhanshu Gupta / Wikimedia Commons, CC BY-SA 4.0"
+            "city": "Los Angeles",
+            "country": "United States",
+            "latitude": 34.0536909,
+            "longitude": -118.242766,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e3/Los_Angeles_City_Hall_2013_%28cropped%29.jpg/250px-Los_Angeles_City_Hall_2013_%28cropped%29.jpg",
+            "credit": "Photo by Michael J Fromholtz / Wikimedia Commons, Public Domain"
         },
         {
             "city": "Beijing",
             "country": "China",
-            "lat": 39.9042,
-            "lon": 116.4074,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/45/Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests_01_%28cropped%29.jpg/330px-Temple_of_Heaven_-_Hall_of_Prayer_for_Good_Harvests_01_%28cropped%29.jpg",
-            "credit": "Photo by CEphoto, Uwe Aranas / Wikimedia Commons, CC BY-SA 3.0"
+            "latitude": 40.190632,
+            "longitude": 116.412144,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/9/92/Beijing_City_%284214640799%29.jpg",
+            "credit": "Photo by Kentaro Iemoto / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
-            "city": "Cairo",
-            "country": "Egypt",
-            "lat": 30.0444,
-            "lon": 31.2357,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/3/30/Kairo_Midan_Talaat_Harb_BW_2.jpg/330px-Kairo_Midan_Talaat_Harb_BW_2.jpg",
-            "credit": "Photo by Berthold Werner / Wikimedia Commons, CC BY-SA 3.0"
+            "city": "Dubai",
+            "country": "United Arab Emirates",
+            "latitude": 25.0742823,
+            "longitude": 55.1885387,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c7/Burj_Khalifa_2021.jpg/250px-Burj_Khalifa_2021.jpg",
+            "credit": "Photo by Francisco Anzola / Wikimedia Commons, CC BY 2.0"
         },
         {
-            "city": "Kuala Lumpur",
-            "country": "Malaysia",
-            "lat": 3.139,
-            "lon": 101.6869,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/60/KL_Library_view_Dataran_Merdeka_March_2022.jpg/330px-KL_Library_view_Dataran_Merdeka_March_2022.jpg",
-            "credit": "Photo by CEphoto, Uwe Aranas / Wikimedia Commons, CC BY-SA 3.0"
+            "city": "Rome",
+            "country": "Italy",
+            "latitude": 41.8933203,
+            "longitude": 12.4829321,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b7/Roma_-_veduta_04.jpg/500px-Roma_-_veduta_04.jpg",
+            "credit": "Photo by Diego Baglieri / Wikimedia Commons, CC BY-SA 4.0"
         },
         {
-            "city": "Tehran",
-            "country": "Iran",
-            "lat": 35.6892,
-            "lon": 51.389,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/23/Azadi_Tower_%2829358497718%29.jpg/330px-Azadi_Tower_%2829358497718%29.jpg",
-            "credit": "Photo by Ninara / Wikimedia Commons, CC BY 2.0"
+            "city": "Berlin",
+            "country": "Germany",
+            "latitude": 52.510885,
+            "longitude": 13.3989367,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/54/Berlin_Panorama_Mitte.jpg/1200px-Berlin_Panorama_Mitte.jpg?20151113124605",
+            "credit": "Photo by Nordenfan / Wikimedia Commons, CC BY-SA 4.0"
         },
         {
-            "city": "Oslo",
-            "country": "Norway",
-            "lat": 59.9139,
-            "lon": 10.7522,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9a/Nationaltheatret_evening.jpg/330px-Nationaltheatret_evening.jpg",
-            "credit": "Photo by Mahlum / Wikimedia Commons, CC BY-SA 3.0"
+            "city": "Sydney",
+            "country": "Australia",
+            "latitude": -33.8698439,
+            "longitude": 151.2082848,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Sydney_skyline.jpg/1280px-Sydney_skyline.jpg",
+            "credit": "Photo by Witty lama / Wikimedia Commons, CC BY-SA 2.5"
         },
         {
-            "city": "Helsinki",
-            "country": "Finland",
-            "lat": 60.1699,
-            "lon": 24.9384,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/6e/11-07-29-helsinki-by-RalfR-030.jpg/330px-11-07-29-helsinki-by-RalfR-030.jpg",
-            "credit": "Photo by Ralf Roletschek / Wikimedia Commons, CC BY-SA 3.0"
+            "city": "Toronto",
+            "country": "Canada",
+            "latitude": 43.6534817,
+            "longitude": -79.3839347,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/91/Skyline_of_Toronto%2C_Canada9.jpg/1280px-Skyline_of_Toronto%2C_Canada9.jpg",
+            "credit": "Photo by Diego Delso / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
-            "city": "Copenhagen",
-            "country": "Denmark",
-            "lat": 55.6761,
-            "lon": 12.5683,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cc/Tivoligardens2.jpg/330px-Tivoligardens2.jpg",
-            "credit": "Photo by Malene Thyssen / Wikimedia Commons, CC BY-SA 3.0"
+            "city": "Moscow",
+            "country": "Russia",
+            "latitude": 55.625578,
+            "longitude": 37.6063916,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/Moscow-City-9-05-2011.JPG/1200px-Moscow-City-9-05-2011.JPG?20110511233318",
+            "credit": "Photo by Stanislav Kozlovskiy / Wikimedia Commons, CC BY-SA 3.0"
         },
         {
-            "city": "Reykjavik",
-            "country": "Iceland",
-            "lat": 64.1265,
-            "lon": -21.8174,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/H%C3%B6f%C3%B0i_mvp.jpg/330px-H%C3%B6f%C3%B0i_mvp.jpg",
-            "credit": "Photo by Mewasul / Wikimedia Commons, CC BY-SA 4.0"
+            "city": "Shanghai",
+            "country": "China",
+            "latitude": 31.2312707,
+            "longitude": 121.4700152,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Shanghai_skyline_at_daytime%2C_panoramic._China%2C_East_Asia.jpg/1200px-Shanghai_skyline_at_daytime%2C_panoramic._China%2C_East_Asia.jpg?20130815214212",
+            "credit": "Photo by Mstyslav Chernov / Wikimedia Commons, CC BY-SA 3.0"
         },
         {
-            "city": "Osaka",
-            "country": "Japan",
-            "lat": 34.6937,
-            "lon": 135.5023,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f4/Shin-Sekai%EF%BC%9A%E6%96%B0%E4%B8%96%E7%95%8C_-_panoramio.jpg/330px-Shin-Sekai%EF%BC%9A%E6%96%B0%E4%B8%96%E7%95%8C_-_panoramio.jpg",
-            "credit": "Photo by Kenta Mabuchi / Wikimedia Commons, CC BY 3.0"
+            "city": "Chicago",
+            "country": "United States",
+            "latitude": 41.8755616,
+            "longitude": -87.6244212,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Chicago_Skyline_%28193222927%29.jpeg/1200px-Chicago_Skyline_%28193222927%29.jpeg?20180809051652",
+            "credit": "Photo by Jesse Collins / Wikimedia Commons, CC BY 3.0"
         },
         {
-            "city": "Lima",
-            "country": "Peru",
-            "lat": -12.0464,
-            "lon": -77.0428,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e9/Urban_View_of_Lima%2C_Peru_09_%28Night_City%29.jpg/330px-Urban_View_of_Lima%2C_Peru_09_%28Night_City%29.jpg",
-            "credit": "Photo by Diego Delso / Wikimedia Commons, CC BY-SA 4.0"
+            "city": "Madrid",
+            "country": "Spain",
+            "latitude": 40.4167047,
+            "longitude": -3.7035825,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/City_of_Madrid_%2818043088845%29_%28cropped%29.jpg/1200px-City_of_Madrid_%2818043088845%29_%28cropped%29.jpg?20161222121304",
+            "credit": "Photo by Diriye Amey / Wikimedia Commons, CC BY 2.0"
         },
         {
-            "city": "Manila",
-            "country": "Philippines",
-            "lat": 14.5995,
-            "lon": 120.9842,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/bb/Rizal_Monument.jpg/250px-Rizal_Monument.jpg",
-            "credit": "Photo by User:Mylius / Wikimedia Commons, CC BY-SA 4.0"
+            "city": "Singapore",
+            "country": "Singapore",
+            "latitude": 1.357107,
+            "longitude": 103.8194992,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/82/1_Singapore_city_skyline_2010_day_panorama.jpg/1200px-1_Singapore_city_skyline_2010_day_panorama.jpg?20101119072539",
+            "credit": "Photo by chensiyuan / Wikimedia Commons, GFDL 1.2"
         },
         {
-            "city": "Santiago",
-            "country": "Chile",
-            "lat": -33.4489,
-            "lon": -70.6693,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Palacio_de_La_Moneda_-_miguelreflex.jpg/330px-Palacio_de_La_Moneda_-_miguelreflex.jpg",
-            "credit": "Photo by Miguelreflex / Wikimedia Commons, CC BY-SA 4.0"
+            "city": "Seoul",
+            "country": "South Korea",
+            "latitude": 37.5666791,
+            "longitude": 126.9782914,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Seoul_%28175734251%29.jpeg/960px-Seoul_%28175734251%29.jpeg",
+            "credit": "Photo by Joon Kyu Park / Wikimedia Commons, CC BY-SA 3.0"
         },
         {
-            "city": "Warsaw",
-            "country": "Poland",
-            "lat": 52.2297,
-            "lon": 21.0122,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Warszawa%2C_Kolumna_Zygmunta_III_Wazy.jpg/250px-Warszawa%2C_Kolumna_Zygmunta_III_Wazy.jpg",
-            "credit": "Photo by Adrian Grycuk / Wikimedia Commons, CC BY-SA 3.0"
+            "city": "San Francisco",
+            "country": "United States",
+            "latitude": 37.7792588,
+            "longitude": -122.4193286,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cf/San_Francisco_01.jpg/1200px-San_Francisco_01.jpg?20090304161452",
+            "credit": "Photo by Bernard Gagnon / Wikimedia Commons, GFDL 1.2"
         },
         {
-            "city": "Prague",
-            "country": "Czech Republic",
-            "lat": 50.0755,
-            "lon": 14.4378,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5d/N%C3%A1rodn%C3%AD_divadlo_z_ostrova_1.jpg/250px-N%C3%A1rodn%C3%AD_divadlo_z_ostrova_1.jpg",
-            "credit": "Photo by ŠJů / Wikimedia Commons, CC BY-SA 3.0"
+            "city": "Istanbul",
+            "country": "Turkey",
+            "latitude": 41.006381,
+            "longitude": 28.9758715,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/6/63/Istanbul_%2825429035232%29.jpg/1200px-Istanbul_%2825429035232%29.jpg?20191009171520",
+            "credit": "Photo by Pedro Szekely / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
-            "city": "Budapest",
-            "country": "Hungary",
-            "lat": 47.4979,
-            "lon": 19.0402,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Heroes_Square_Budapest_2010_quartersize.jpg/330px-Heroes_Square_Budapest_2010_quartersize.jpg",
-            "credit": "Photo by Andrew Shiva / Wikimedia Commons, CC BY-SA 4.0"
+            "city": "Mexico City",
+            "country": "Mexico",
+            "latitude": 19.4326296,
+            "longitude": -99.1331785,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Mexico_City_Cathedral.jpg/1200px-Mexico_City_Cathedral.jpg?20110618160519",
+            "credit": "Photo by Francisco Diez / Wikimedia Commons, CC BY 2.0"
         },
         {
-            "city": "Athens",
-            "country": "Greece",
-            "lat": 37.9838,
-            "lon": 23.7275,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/Attica_06-13_Athens_27_Zappeion.jpg/330px-Attica_06-13_Athens_27_Zappeion.jpg",
-            "credit": "Photo by Tilemahos Efthimiadis / Wikimedia Commons, CC BY-SA 2.0"
+            "city": "Bangkok",
+            "country": "Thailand",
+            "latitude": 13.7524938,
+            "longitude": 100.4935089,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/f/f6/Bangkok_skytrain_sunset.jpg/1200px-Bangkok_skytrain_sunset.jpg?20140605093956",
+            "credit": "Photo by Diliff / Wikimedia Commons, GFDL 1.2 + CC BY-SA 3.0 + CC BY-SA 2.5"
         },
         {
-            "city": "Brussels",
-            "country": "Belgium",
-            "lat": 50.8503,
-            "lon": 4.3517,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/ae/Grand_Place_Bruselas_2.jpg/500px-Grand_Place_Bruselas_2.jpg",
-            "credit": "Photo by Diego Delso / Wikimedia Commons, CC BY-SA 4.0"
+            "city": "Buenos Aires",
+            "country": "Argentina",
+            "latitude": -34.6083696,
+            "longitude": -58.4440583,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/42/Congress_Plaza%2C_Buenos_Aires_at_Sunset.jpg/1200px-Congress_Plaza%2C_Buenos_Aires_at_Sunset.jpg?20090205072211",
+            "credit": "Photo by Luis Argerich / Wikimedia Commons, CC BY 2.0"
+        },
+        {
+            "city": "Barcelona",
+            "country": "Spain",
+            "latitude": 41.3825802,
+            "longitude": 2.177073,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/dd/Barcelona_skyline.jpg/1200px-Barcelona_skyline.jpg?20130302182936",
+            "credit": "Photo by frank müller / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Sao Paulo",
+            "country": "Brazil",
+            "latitude": -23.5506507,
+            "longitude": -46.6333824,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/d/d9/S%C3%A3o_Paulo_City.jpg/1200px-S%C3%A3o_Paulo_City.jpg?20100523033904",
+            "credit": "Photo by Júlio Boaro / Wikimedia Commons, CC BY 2.0"
+        },
+        {
+            "city": "Delhi",
+            "country": "India",
+            "latitude": 28.6273928,
+            "longitude": 77.1716954,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0a/Old_Delhi_from_Jama_Masjid.JPG/1200px-Old_Delhi_from_Jama_Masjid.JPG?20130918045206",
+            "credit": "Photo by Abhatnagar2 / Wikimedia Commons, CC BY-SA 3.0"
+        },
+        {
+            "city": "Hong Kong",
+            "country": "China",
+            "latitude": 22.350627,
+            "longitude": 114.1849161,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ce/View_of_Hong_Kong_from_Victoria_Peak.jpg/1200px-View_of_Hong_Kong_from_Victoria_Peak.jpg?20091102100340",
+            "credit": "Photo by Dennis Tang / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Vienna",
             "country": "Austria",
-            "lat": 48.2082,
-            "lon": 16.3738,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/9/9f/Vienna_Austria_Skyline_Aerial%2C_October_2024.jpg/500px-Vienna_Austria_Skyline_Aerial%2C_October_2024.jpg",
-            "credit": "Photo by Bwag / Wikimedia Commons, CC BY-SA 4.0"
+            "latitude": 48.2083537,
+            "longitude": 16.3725042,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/Wien_Stephansdom-7_%285804548145%29.jpg/1200px-Wien_Stephansdom-7_%285804548145%29.jpg?20141017074121",
+            "credit": "Photo by MiGowa / Wikimedia Commons, CC BY 2.0"
         },
         {
             "city": "Amsterdam",
             "country": "Netherlands",
-            "lat": 52.3676,
-            "lon": 4.9041,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/KeizersgrachtReguliersgrachtAmsterdam.jpg/330px-KeizersgrachtReguliersgrachtAmsterdam.jpg",
-            "credit": "Photo by Jorge Royan / Wikimedia Commons, CC BY-SA 3.0"
+            "latitude": 52.3730796,
+            "longitude": 4.8924534,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e5/Amsterdam%2C_Netherlands_%28Unsplash_2Hs8zbwOLDA%29.jpg/1200px-Amsterdam%2C_Netherlands_%28Unsplash_2Hs8zbwOLDA%29.jpg?20170824181520",
+            "credit": "Photo by Javier M. jmelpri / Wikimedia Commons, CC0 1.0 Universal"
+        },
+        {
+            "city": "Washington, D.C.",
+            "country": "United States",
+            "latitude": 38.8950368,
+            "longitude": -77.0365427,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/Jefferson_Memorial_06.jpg/1920px-Jefferson_Memorial_06.jpg",
+            "credit": "Photo by Nash Long / Wikimedia Commons, CC-BY-SA"
+        },
+        {
+            "city": "Prague",
+            "country": "Czechia",
+            "latitude": 50.0596288,
+            "longitude": 14.4464593,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/a/a7/Prague_%286365119737%29.jpg/1200px-Prague_%286365119737%29.jpg?20170111161901",
+            "credit": "Photo by Moyan Brenn / Wikimedia Commons, CC BY 2.0"
+        },
+        {
+            "city": "Copenhagen",
+            "country": "Denmark",
+            "latitude": 55.6867243,
+            "longitude": 12.5700724,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/04/Nyhavn_copenhagen.jpg/1200px-Nyhavn_copenhagen.jpg?20230409075528",
+            "credit": "Photo by GuoJunjun / Wikimedia Commons, CC BY-SA 3.0"
+        },
+        {
+            "city": "Milan",
+            "country": "Italy",
+            "latitude": 45.4641943,
+            "longitude": 9.1896346,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e1/Milano_Italy_Duomo-Milan-01.jpg/1164px-Milano_Italy_Duomo-Milan-01.jpg?20160126202113",
+            "credit": "Photo by Uwe Aranas / Wikimedia Commons, CC BY-SA 3.0"
+        },
+        {
+            "city": "Stockholm",
+            "country": "Sweden",
+            "latitude": 59.3251172,
+            "longitude": 18.0710935,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Jakarta",
+            "country": "Indonesia",
+            "latitude": -6.1754049,
+            "longitude": 106.827168,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Munich",
+            "country": "Germany",
+            "latitude": 48.1371079,
+            "longitude": 11.5753822,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Zurich",
+            "country": "Switzerland",
+            "latitude": 47.3744489,
+            "longitude": 8.5410422,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Brussels",
+            "country": "Belgium",
+            "latitude": 50.8465573,
+            "longitude": 4.351697,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Johannesburg",
+            "country": "South Africa",
+            "latitude": -26.205,
+            "longitude": 28.049722,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Warsaw",
+            "country": "Poland",
+            "latitude": 52.2319581,
+            "longitude": 21.0067249,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Budapest",
+            "country": "Hungary",
+            "latitude": 47.4978789,
+            "longitude": 19.0402383,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Lisbon",
+            "country": "Portugal",
+            "latitude": 38.7077507,
+            "longitude": -9.1365919,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Vancouver",
+            "country": "Canada",
+            "latitude": 49.2608724,
+            "longitude": -123.113952,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Doha",
+            "country": "Qatar",
+            "latitude": 25.2856329,
+            "longitude": 51.5264162,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Abu Dhabi",
+            "country": "United Arab Emirates",
+            "latitude": 24.4538352,
+            "longitude": 54.3774014,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Riyadh",
+            "country": "Saudi Arabia",
+            "latitude": 24.638916,
+            "longitude": 46.7160104,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Auckland",
+            "country": "New Zealand",
+            "latitude": -36.852095,
+            "longitude": 174.7631803,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Oslo",
+            "country": "Norway",
+            "latitude": 59.9133301,
+            "longitude": 10.7389701,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Helsinki",
+            "country": "Finland",
+            "latitude": 60.1674881,
+            "longitude": 24.9427473,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Manila",
+            "country": "Philippines",
+            "latitude": 14.5904492,
+            "longitude": 120.9803621,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Nairobi",
+            "country": "Kenya",
+            "latitude": -1.3026148,
+            "longitude": 36.828842,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Casablanca",
+            "country": "Morocco",
+            "latitude": 33.5945144,
+            "longitude": -7.6200284,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Cape Town",
+            "country": "South Africa",
+            "latitude": -33.9288301,
+            "longitude": 18.4172197,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Lagos",
+            "country": "Nigeria",
+            "latitude": 6.4550575,
+            "longitude": 3.3941795,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Santiago",
+            "country": "Costa Rica",
+            "latitude": 9.8694792,
+            "longitude": -83.7980749,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Bogota",
+            "country": "Colombia",
+            "latitude": 4.6534109,
+            "longitude": -74.0836547,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Lima",
+            "country": "Peru",
+            "latitude": -12.0621065,
+            "longitude": -77.0365256,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Caracas",
+            "country": "Venezuela",
+            "latitude": 10.5060934,
+            "longitude": -66.9146008,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Montreal",
+            "country": "Canada",
+            "latitude": 45.5031824,
+            "longitude": -73.5698065,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Philadelphia",
+            "country": "United States",
+            "latitude": 39.9527237,
+            "longitude": -75.1635262,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Atlanta",
+            "country": "United States",
+            "latitude": 33.7544657,
+            "longitude": -84.3898151,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Houston",
+            "country": "United States",
+            "latitude": 29.7589382,
+            "longitude": -95.3676974,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Phoenix",
+            "country": "United States",
+            "latitude": 33.4484367,
+            "longitude": -112.074141,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Dallas",
+            "country": "United States",
+            "latitude": 32.7762719,
+            "longitude": -96.7968559,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Miami",
+            "country": "United States",
+            "latitude": 25.7741728,
+            "longitude": -80.19362,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Seattle",
+            "country": "United States",
+            "latitude": 47.6038321,
+            "longitude": -122.330062,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "San Diego",
+            "country": "United States",
+            "latitude": 32.7174202,
+            "longitude": -117.162772,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Detroit",
+            "country": "United States",
+            "latitude": 42.3315509,
+            "longitude": -83.0466403,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Denver",
+            "country": "United States",
+            "latitude": 39.7392364,
+            "longitude": -104.984862,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Charlotte",
+            "country": "United States",
+            "latitude": 35.2272086,
+            "longitude": -80.8430827,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Kuala Lumpur",
+            "country": "Malaysia",
+            "latitude": 3.1526589,
+            "longitude": 101.7022205,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Hanoi",
+            "country": "Vietnam",
+            "latitude": 21.0283334,
+            "longitude": 105.854041,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Ho Chi Minh City",
+            "country": "Vietnam",
+            "latitude": 10.7763897,
+            "longitude": 106.7011391,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Lahore",
+            "country": "Pakistan",
+            "latitude": 31.5656822,
+            "longitude": 74.3141829,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Karachi",
+            "country": "Pakistan",
+            "latitude": 24.8546842,
+            "longitude": 67.0207055,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Bangalore",
+            "country": "India",
+            "latitude": 12.9767936,
+            "longitude": 77.590082,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Hyderabad",
+            "country": "India",
+            "latitude": 17.360589,
+            "longitude": 78.4740613,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Chennai",
+            "country": "India",
+            "latitude": 13.0836939,
+            "longitude": 80.270186,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Pune",
+            "country": "India",
+            "latitude": 18.5213738,
+            "longitude": 73.8545071,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Ahmedabad",
+            "country": "India",
+            "latitude": 23.0215374,
+            "longitude": 72.5800568,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Brisbane",
+            "country": "Australia",
+            "latitude": -27.4689623,
+            "longitude": 153.0235009,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Perth",
+            "country": "Australia",
+            "latitude": -31.9558967,
+            "longitude": 115.8605784,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Melbourne",
+            "country": "Australia",
+            "latitude": -37.8142454,
+            "longitude": 144.9631732,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Adelaide",
+            "country": "Australia",
+            "latitude": -34.9281805,
+            "longitude": 138.5999312,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Edinburgh",
+            "country": "United Kingdom",
+            "latitude": 55.9533456,
+            "longitude": -3.1883749,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Belfast",
+            "country": "United Kingdom",
+            "latitude": 54.5975804,
+            "longitude": -5.9277097,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Glasgow",
+            "country": "United Kingdom",
+            "latitude": 55.861155,
+            "longitude": -4.2501687,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Dublin",
+            "country": "Ireland",
+            "latitude": 53.3493795,
+            "longitude": -6.2605593,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Reykjavik",
+            "country": "Iceland",
+            "latitude": 64.145981,
+            "longitude": -21.9422367,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Tallinn",
+            "country": "Estonia",
+            "latitude": 59.4372155,
+            "longitude": 24.7453688,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Riga",
+            "country": "Latvia",
+            "latitude": 56.9493977,
+            "longitude": 24.1051846,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Vilnius",
+            "country": "Lithuania",
+            "latitude": 54.6870458,
+            "longitude": 25.2829111,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Belgrade",
+            "country": "Serbia",
+            "latitude": 44.8178131,
+            "longitude": 20.4568974,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Kiev",
+            "country": "Ukraine",
+            "latitude": 50.4500336,
+            "longitude": 30.5241361,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Bucharest",
+            "country": "Romania",
+            "latitude": 44.4361414,
+            "longitude": 26.1027202,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Sofia",
+            "country": "Bulgaria",
+            "latitude": 42.6977028,
+            "longitude": 23.3217359,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Tbilisi",
+            "country": "Georgia",
+            "latitude": 41.6934591,
+            "longitude": 44.8014495,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Yerevan",
+            "country": "Armenia",
+            "latitude": 40.1777112,
+            "longitude": 44.5126233,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Baku",
+            "country": "Azerbaijan",
+            "latitude": 40.3755885,
+            "longitude": 49.8328009,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Almaty",
+            "country": "Kazakhstan",
+            "latitude": 43.2363924,
+            "longitude": 76.9457275,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "New York",
+            "country": "United States",
+            "latitude": 40.7127281,
+            "longitude": -74.0060152,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Cleveland",
+            "country": "United States",
+            "latitude": 37.9791718,
+            "longitude": -101.7652375,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Watertown",
+            "country": "United States",
+            "latitude": 42.3652518,
+            "longitude": -71.1843236,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         }
     ]
 }
