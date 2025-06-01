@@ -872,6 +872,84 @@
             "country": "Italy",
             "latitude": 45.4371908,
             "longitude": 12.3345898
+        },
+        {
+            "city": "Delhi",
+            "country": "India",
+            "latitude": 28.6273928,
+            "longitude": 77.1716954
+        },
+        {
+            "city": "rahh",
+            "country": "Oman",
+            "latitude": 17.16406,
+            "longitude": 54.01073
+        },
+        {
+            "city": "indianapolis",
+            "country": "United States",
+            "latitude": 39.7683331,
+            "longitude": -86.1583502
+        },
+        {
+            "city": "hiroshima",
+            "country": "Japan",
+            "latitude": 34.3917241,
+            "longitude": 132.4517589
+        },
+        {
+            "city": "Phoenix",
+            "country": "United States",
+            "latitude": 33.4484367,
+            "longitude": -112.074141
+        },
+        {
+            "city": "Equador",
+            "country": "Ecuador",
+            "latitude": -1.3397668,
+            "longitude": -79.3666965
+        },
+        {
+            "city": "Senegal",
+            "country": "Senegal",
+            "latitude": 14.4750607,
+            "longitude": -14.4529612
+        },
+        {
+            "city": "Oslo",
+            "country": "Norway",
+            "latitude": 59.9133301,
+            "longitude": 10.7389701
+        },
+        {
+            "city": "san francisco",
+            "country": "United States",
+            "latitude": 37.7792588,
+            "longitude": -122.4193286
+        },
+        {
+            "city": "santorini",
+            "country": "Greece",
+            "latitude": 36.4071112,
+            "longitude": 25.4566637
+        },
+        {
+            "city": "frankfurt",
+            "country": "Germany",
+            "latitude": 50.1106444,
+            "longitude": 8.6820917
+        },
+        {
+            "city": "nyc",
+            "country": "United States",
+            "latitude": 40.7127281,
+            "longitude": -74.0060152
+        },
+        {
+            "city": "idk",
+            "country": "Mexico",
+            "latitude": 25.8745384,
+            "longitude": -97.522571
         }
     ]
 }
