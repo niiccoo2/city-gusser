@@ -12,7 +12,7 @@ def get_summary(city):
         response = client.chat.completions.create(
             model="gpt-4.1-nano",
             messages=[
-                {"role": "user", "content": f"Write a two sentance summary of {city}. It is for a city gussing game so you can't give away the city is. Maybe some fun facts. DO NOT INCLUDE ANY LOCATIONS EX: EUROPE, SOUTH ASIA"},
+                {"role": "user", "content": f"Write a two sentance summary of {city}. It is for a city gussing game so you can't give away the city is. Maybe some fun facts. DO NOT INCLUDE ANY LOCATIONS OR AREAS OF THE WORLD. Thank you."},
             ],
             temperature=0,
         )
