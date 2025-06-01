@@ -24,17 +24,17 @@
 /* If you want the content centered horizontally and vertically */
 .centered {
   position: absolute;
-  top: 50%;
+  top: 30%;
   left: 50%;
   transform: translate(-50%, -50%);
-  text-align: center;
+  text-align: left;
 }
 
 /* Style the image inside the centered container, if needed */
-.centered img {
+/* .centered img {
   width: 150px;
   border-radius: 50%;
-}
+} */
 
 /* Add this CSS rule for the vertical line */
 .vertical-line {
