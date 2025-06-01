@@ -2,7 +2,7 @@ from openai import OpenAI #type: ignore
 import os
 import json
 import random
-import requests
+import requests #type: ignore
 
 
 def get_summary(city):
