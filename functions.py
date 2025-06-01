@@ -223,7 +223,13 @@ def logic():
     city_info = city_info_list[0]
     print(f"City: {city_info.get('city', 'Unknown City')}")
     while True:
+        try_number = 0
+
+        if try_number == 5:
+            break
+
         guess = input("Guess a city!\n")
+        try_number += 1
         guess_normalized = guess.lower().replace('city', '').replace('.', '').replace(',', '').strip()
         guess_info = city_api(guess)
         if not guess_info:
@@ -238,6 +244,8 @@ def logic():
         guess_country_normalized = guess_info.get('country', '').lower().strip()
 
         print(target_city_normalized)
+
+
 
         def get_state(city_dict):
             components = city_dict.get('components', {})
@@ -271,5 +279,7 @@ def logic():
         relative_distance_city = compare_city(guess, city_info.get('city'), "cardinal")
         print(f"{country_hint}, {guess_info.get('city')} {relative_distance_city}, {direction}")
 
+
 if __name__ == "__main__":
     logic()
+    save_and_quit() #type: ignore #xavier this is you DO IT.
