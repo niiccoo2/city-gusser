@@ -633,7 +633,7 @@
             "credit": "Photo by Clifton & Co. Mumbai / Wikimedia Commons, CC BY 4.0"
         },
         {
-            "city": "Ahmedabad",
+            "city": "Ahmedabad City",
             "country": "India",
             "latitude": 23.0215374,
             "longitude": 72.5800568,
@@ -665,7 +665,7 @@
             "credit": "Photo by Wanderingchina / Wikimedia Commons, CC BY-SA 4.0"
         },
         {
-            "city": "Adelaide",
+            "city": "Adelaide City",
             "country": "Australia",
             "latitude": -34.9281805,
             "longitude": 138.5999312,
@@ -729,7 +729,7 @@
             "credit": "Photo by АнИгМа / Wikimedia Commons, CC BY-SA 4.0"
         },
         {
-            "city": "Vilnius",
+            "city": "Vilnius City",
             "country": "Lithuania",
             "latitude": 54.6870458,
             "longitude": 25.2829111,
@@ -745,7 +745,7 @@
             "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License"
         },
         {
-            "city": "Kiev",
+            "city": "Kiev City",
             "country": "Ukraine",
             "latitude": 50.4500336,
             "longitude": 30.5241361,
@@ -777,7 +777,7 @@
             "credit": "Photo by Mostafameraji / Wikimedia Commons, CC BY-SA 3.0"
         },
         {
-            "city": "Yerevan",
+            "city": "Yerevan City",
             "country": "Armenia",
             "latitude": 40.1777112,
             "longitude": 44.5126233,
@@ -801,7 +801,7 @@
             "credit": "Photo by Ali-mukhamet / Wikimedia Commons, CC BY-SA 4.0"
         },
         {
-            "city": "New York",
+            "city": "New York City",
             "country": "United States",
             "latitude": 40.7127281,
             "longitude": -74.0060152,
@@ -821,8 +821,8 @@
             "country": "United States",
             "latitude": 42.3652518,
             "longitude": -71.1843236,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/5/58/Watertown_NY_Late_19th_century_festival.jpg",
-            "credit": "Photo by Unknown authorUnknown author / Wikimedia Commons, Public domain"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Sawins_Pond_in_Watertown_MA_Oct_2024_3.jpg",
+            "credit": "Photo by 4300streetcar / Wikimedia Commons, CC BY 4.0"
         }
     ]
 }

@@ -191,7 +191,7 @@ if __name__ == "__main__":
         if not image_urls:
             image_urls = search_commons_images_by_name(city, 10)
             if not image_urls:
-                exit(f"No images found for {city}!!!!!!!!!!")
+                # exit(f"No images found for {city}!!!!!!!!!!")
                 print(f"No images found for {city}")
                 continue
         found = False
