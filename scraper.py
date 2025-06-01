@@ -1,5 +1,6 @@
 import requests
 import os
+import json
 
 def load_opencage_key():
     env_path = os.path.join(os.path.dirname(__file__), 'scraper.env')
@@ -36,7 +37,40 @@ def get_city_info(city):
         "longitude": lng
     }
 
-# Example
+def add_city_to_json(city):
+    city_info = get_city_info(city)
+    if city_info and 'error' not in city_info:
+        json_file = 'photos-database-scraper.json'
+        # Read existing data
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+        except Exception:
+            data = {"cities": []}
+        # Add new city
+        if "cities" not in data or not isinstance(data["cities"], list):
+            data["cities"] = []
+        # Avoid duplicates
+        if not any(c.get('city', '').lower() == city_info['city'].lower() for c in data['cities']):
+            data["cities"].append(city_info)
+            with open(json_file, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=4)
+            print(f"Added {city_info['city']} to {json_file}")
+        else:
+            print(f"{city_info['city']} already in database.")
+    else:
+        print(f"City not found or error: {city_info.get('error') if city_info else 'Unknown error'}")
 
-info = get_city_info("Tokyo")
-print(info.get('city'))
+
+def city_api(city):
+    info = get_city_info(city)
+
+    if info and isinstance(info, dict):
+        if 'error' in info:
+            print(info['error'])
+        else:
+            print(info.get('city'))
+    else:
+        print('No data returned.')
+
+    add_city_to_json(city)
