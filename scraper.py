@@ -1,6 +1,9 @@
 import requests
 from bs4 import BeautifulSoup
 import json
+import sys
+sys.path.append('.')
+from functions import get_city_info
 
 # Example: Scrape images from a Wikipedia Commons category page
 
@@ -180,6 +183,7 @@ if __name__ == "__main__":
     with open('photos-database-scraper.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
     categories = [city['city'] for city in data.get('cities', []) if 'city' in city]
+    updated_cities = []
     for city in categories:
         city_category = city.replace(' ', '_')
         category_url = f"https://commons.wikimedia.org/wiki/Category:{city_category}"
@@ -212,8 +216,25 @@ if __name__ == "__main__":
             noauthor += 1
         if not found_license:
             nolicenses += 1
+        # Get city info (country, latitude, longitude)
+        city_info = get_city_info(city)
+        country = city_info.get('country', 'Unknown')
+        latitude = city_info.get('latitude', None)
+        longitude = city_info.get('longitude', None)
+        # Format credit string
+        credit = f"Photo by {author} / Wikimedia Commons, {license}"
+        city_entry = {
+            'city': city,
+            'country': country,
+            'latitude': latitude,
+            'longitude': longitude,
+            'image': url if found else last_url,
+            'credit': credit
+        }
+        updated_cities.append(city_entry)
     print('Cities with no author:', noauthor)
     print('Cities with no license:', nolicenses)
+    # Save results to JSON
     with open('photos-database-scraper.json', 'w', encoding='utf-8') as file:
-        json.dump(data, file, ensure_ascii=False, indent=4)
+        json.dump({'cities': updated_cities}, file, ensure_ascii=False, indent=4)
     print("Done!")
