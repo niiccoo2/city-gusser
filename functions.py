@@ -11,7 +11,7 @@ def get_summary(city):
         client = OpenAI(api_key=key)
 
         response = client.chat.completions.create(
-            model="gpt-4o-mini",
+            model="gpt-4.1-nano",
             messages=[
                 {"role": "user", "content": f"Write a two sentance summary of {city}. It is for a city gussing game so you can't give away the city is. Maybe some fun facts. DO NOT INCLUDE ANY LOCATIONS EX: EUROPE, SOUTH ASIA"},
             ],
