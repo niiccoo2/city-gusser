@@ -21,29 +21,29 @@
                 <th>Direction</th>
             </tr>
             <tr>
-                <td>{{ state.get('gusses')[0][0] }}</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[0][0] }}</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[0][2] }}</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[0][4] }}</td>
             </tr>
             <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
-            </tr>
-                        <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[1][0] }}</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[1][2] }}</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[1][4] }}</td>
             </tr>
             <tr>
-                <td>Centro comercial Moctezuma</td>
-                <td>Francisco Chang</td>
-                <td>Mexico</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[2][0] }}</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[2][2] }}</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[2][4] }}</td>
+            </tr>
+            <tr>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[3][0] }}</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[3][2] }}</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[3][4] }}</td>
             </tr>
                         <tr>
-                <td>Alfreds Futterkiste</td>
-                <td>Maria Anders</td>
-                <td>Germany</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[4][0] }}</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[4][2] }}</td>
+                <td>{{ "" if state.get('guesses')!=None else state.get('guesses')[4][4] }}</td>
             </tr>
         </table> 
         <form action="" method="post" novalidate>
