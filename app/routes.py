@@ -5,9 +5,7 @@ import main
 @app.route('/')
 @app.route('/index')
 def index():
-    city = main.
-    nice_city = f"{city[0].get("city")}, {city[0].get("country")}"
-    image = random_image.get('image')
+    image = main.pick_random_city(1)
     
     user = {'username': 'Nico'}
     return render_template('index.html', title='Home', user=user, image=image)
