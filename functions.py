@@ -232,24 +232,45 @@ def logic():
             print("Invalid guess.")
             continue
 
-        # Normalize city names for comparison
+
         target_city_normalized = city_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
         guess_city_normalized = guess_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
+        target_country_normalized = city_info.get('country', '').lower().strip()
+        guess_country_normalized = guess_info.get('country', '').lower().strip()
+
+        # US state logic: check if both cities are in the US and if the state matches
+        def get_state(city_dict):
+            # Try to extract state from city name if present (e.g., 'New York City, NY')
+            # But your JSON does not have state info, so fallback to OpenCage API if available
+            components = city_dict.get('components', {})
+            return components.get('state', '').lower().strip() if components else ''
+
+        guess_state = get_state(guess_info)
+        target_state = get_state(city_info)
+
+        if target_country_normalized == 'united states' and guess_country_normalized == 'united states' and guess_state and target_state:
+            if guess_state == target_state:
+                country_hint = f"{guess_state.title()} (green)"
+            else:
+                country_hint = f"{guess_state.title()} (grey)"
+        elif guess_country_normalized == target_country_normalized:
+            country_hint = f"{guess_info.get('country')} (green)"
+        else:
+            if guess_info.get('country') and city_info.get('country'):
+                relative_distance_country = compare_country(guess_info.get('country'), city_info.get('country'))
+                if relative_distance_country == "(Yellow)":
+                    country_hint = f"{guess_info.get('country')} (yellow)"
+                else:
+                    country_hint = f"{guess_info.get('country')} (grey)"
+            else:
+                country_hint = "Unknown"
 
         if guess_city_normalized == target_city_normalized:
-            print("Correct! You win!")
-            return("Correct! You win!")
+            print(f"Correct! You win! {country_hint}")
+            return(f"Correct! You win! {country_hint}")
 
         direction = compare_city(guess, city_info.get('city'), "dir")
         relative_distance_city = compare_city(guess, city_info.get('city'), "cardinal")
-        if guess_info.get('country') and city_info.get('country'):
-            relative_distance_country = compare_country(guess_info.get('country'), city_info.get('country'))
-            if "not found" not in relative_distance_country:
-                country_hint = f"{guess_info.get('country')} {relative_distance_country}"
-            else:
-                country_hint = "Unknown"
-        else:
-            country_hint = "Unknown"
         print(f"{country_hint}, {guess_info.get('city')} {relative_distance_city}, {direction}")
 
 if __name__ == "__main__":

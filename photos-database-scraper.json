@@ -831,6 +831,36 @@
             "longitude": -74.0060152,
             "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Training_Session_By_Icmsinc_in_Syracuse_NY.jpg",
             "credit": "Photo by Icmsinc / Wikimedia Commons, CC BY 4.0"
+        },
+        {
+            "city": "Zarafshan",
+            "country": "Uzbekistan",
+            "latitude": 41.5719274,
+            "longitude": 64.1961296
+        },
+        {
+            "city": "Osaka",
+            "country": "Japan",
+            "latitude": 34.6937569,
+            "longitude": 135.5014539
+        },
+        {
+            "city": "Algeria",
+            "country": "Algeria",
+            "latitude": 28.0000272,
+            "longitude": 2.9999825
+        },
+        {
+            "city": "Taipei",
+            "country": "Taiwan",
+            "latitude": 25.0375198,
+            "longitude": 121.5636796
+        },
+        {
+            "city": "Durango",
+            "country": "Mexico",
+            "latitude": 24.833333,
+            "longitude": -104.833333
         }
     ]
 }
