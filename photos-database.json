@@ -1,0 +1,164 @@
+{
+  "cities": [
+    {
+      "city": "Boston",
+      "country": "USA",
+      "lat": 42.3601,
+      "lon": -71.0589,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/8/80/Boston_skyline.jpg",
+      "credit": "Photo by User:King of Hearts / Wikimedia Commons, CC BY-SA 3.0"
+    },
+    {
+      "city": "Chicago",
+      "country": "USA",
+      "lat": 41.8781,
+      "lon": -87.6298,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/0/0c/Chicago_skyline%2C_viewed_from_John_Hancock_Center.jpg",
+      "credit": "Photo by Jimmy Emerson, DVM / Wikimedia Commons, CC BY 2.0"
+    },
+    {
+      "city": "New York",
+      "country": "USA",
+      "lat": 40.7128,
+      "lon": -74.0060,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4f/Manhattan_from_top_of_the_rock.jpg",
+      "credit": "Photo by Eric Fischer / Wikimedia Commons, CC BY 2.0"
+    },
+    {
+      "city": "San Francisco",
+      "country": "USA",
+      "lat": 37.7749,
+      "lon": -122.4194,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/GoldenGateBridge-001.jpg",
+      "credit": "Photo by Joe Mabel / Wikimedia Commons, CC BY-SA 3.0"
+    },
+    {
+      "city": "Los Angeles",
+      "country": "USA",
+      "lat": 34.0522,
+      "lon": -118.2437,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3e/Los_Angeles_skyline_from_Mulholland_Drive_2011.jpg",
+      "credit": "Photo by David Shankbone / Wikimedia Commons, CC BY 3.0"
+    },
+    {
+      "city": "Seattle",
+      "country": "USA",
+      "lat": 47.6062,
+      "lon": -122.3321,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e3/Seattle_Kerry_Park_Skyline.jpg",
+      "credit": "Photo by Matthias Süßen / Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "city": "London",
+      "country": "United Kingdom",
+      "lat": 51.5074,
+      "lon": -0.1278,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/cd/London_Montage_L.jpg",
+      "credit": "Photo by David Iliff / Wikimedia Commons, CC BY-SA 3.0"
+    },
+    {
+      "city": "Paris",
+      "country": "France",
+      "lat": 48.8566,
+      "lon": 2.3522,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/a/af/Paris_Montage_2018.png",
+      "credit": "Photo by Thierry Ehrmann / Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "city": "Tokyo",
+      "country": "Japan",
+      "lat": 35.6895,
+      "lon": 139.6917,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/1/16/Tokyo_Montage_2015.png",
+      "credit": "Photo by User:Mylius / Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "city": "Sydney",
+      "country": "Australia",
+      "lat": -33.8688,
+      "lon": 151.2093,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/4e/Sydney_skyline_from_the_north_-_Dec_2009.jpg",
+      "credit": "Photo by User:David Iliff / Wikimedia Commons, CC BY-SA 3.0"
+    },
+    {
+      "city": "Rio de Janeiro",
+      "country": "Brazil",
+      "lat": -22.9068,
+      "lon": -43.1729,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/9f/Rio_de_Janeiro_-_Rafael_Defavari.jpg",
+      "credit": "Photo by Rafael Defavari / Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "city": "Berlin",
+      "country": "Germany",
+      "lat": 52.5200,
+      "lon": 13.4050,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/9/99/Berlin_Montage_2015.png",
+      "credit": "Photo by User:Mylius / Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "city": "Cape Town",
+      "country": "South Africa",
+      "lat": -33.9249,
+      "lon": 18.4241,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/2/20/Cape_Town_Montage_2018.png",
+      "credit": "Photo by User:Mylius / Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "city": "Moscow",
+      "country": "Russia",
+      "lat": 55.7558,
+      "lon": 37.6173,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/3/3b/Moscow_Montage_2017.png",
+      "credit": "Photo by User:Mylius / Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "city": "Dubai",
+      "country": "United Arab Emirates",
+      "lat": 25.2048,
+      "lon": 55.2708,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/f/f8/Dubai_skyline_2020.jpg",
+      "credit": "Photo by Werner Kunz / Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "city": "Toronto",
+      "country": "Canada",
+      "lat": 43.6532,
+      "lon": -79.3832,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/c/c5/Toronto_Montage_2017.png",
+      "credit": "Photo by User:Mylius / Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "city": "Mexico City",
+      "country": "Mexico",
+      "lat": 19.4326,
+      "lon": -99.1332,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/e/e4/Mexico_City_Montage_2019.png",
+      "credit": "Photo by User:Mylius / Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "city": "Buenos Aires",
+      "country": "Argentina",
+      "lat": -34.6037,
+      "lon": -58.3816,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/4/44/Buenos_Aires_Montage.png",
+      "credit": "Photo by User:Mylius / Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "city": "Bangkok",
+      "country": "Thailand",
+      "lat": 13.7563,
+      "lon": 100.5018,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/6/68/Bangkok_Montage_2019.png",
+      "credit": "Photo by User:Mylius / Wikimedia Commons, CC BY-SA 4.0"
+    },
+    {
+      "city": "Singapore",
+      "country": "Singapore",
+      "lat": 1.3521,
+      "lon": 103.8198,
+      "image": "https://upload.wikimedia.org/wikipedia/commons/d/d1/Singapore_Montage_2018.png",
+      "credit": "Photo by User:Mylius / Wikimedia Commons, CC BY-SA 4.0"
+    }
+  ]
+}
