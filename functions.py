@@ -93,9 +93,9 @@ def compare_city(city1, city2, mode, filepath = "./photos-database-scraper.json"
                         output = "South"
             else:
                 if abs((guess_lon + guess_lat) - (city_lon + city_lat)) < 20:
-                    output = "(Yellow)"
+                    output = "Yellow"
                 else:
-                    output = "(Grey)"
+                    output = "Grey"
 
             return output
     except FileNotFoundError:
@@ -132,9 +132,9 @@ def compare_country(city1, city2, filepath = "./photos-database-scraper.json"):
 
             output = ""
             if abs((guess_lon + guess_lat) - (city_lon + city_lat)) < 20:
-                   output = "(Yellow)"
+                   output = "Yellow"
             else:
-                output = "(Grey)"
+                output = "Grey"
 
             return output
     except FileNotFoundError:
@@ -227,84 +227,75 @@ def read_ai_data(city, filepath="photos-database-scraper.json"):
             return data_json["cities"][i].get("ai", "")
 
 def logic(real_city, guess, orginal_state):
-
     new_state = {
         "city": real_city,
-        "guesses": f"{orginal_state.get('guesses')}"
-        }
+        "guesses": orginal_state.get('guesses')
+    }
 
-    while True:
-        city_info_list = get_city_info(real_city)
-        if not city_info_list or 'image' not in city_info_list[0]:
-            continue
-        else:
-            break
-        
-    if not city_info_list:
+    city_info = get_city_info(real_city)
+    if not city_info or (isinstance(city_info, dict) and city_info.get('error')):
         print("No cities in database.")
         return "No Cities In DataBase"
-    city_info = city_info_list[0]
     print(f"City: {city_info.get('city', 'Unknown City')}")
-    while True:
-        try_number = 0
 
-        if try_number == 5:
-            break
-
-        person_guess = guess
-        try_number += 1
-        person_guess_normalized = person_guess.lower().replace('city', '').replace('.', '').replace(',', '').strip()
-        person_guess_info = city_api(person_guess)
-        if not person_guess:
-            print("Invalid guess.")
-            continue
-
-        target_city_normalized = city_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
-        guess_city_normalized = person_guess_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
-        target_country_normalized = city_info.get('country', '').lower().strip()
-        guess_country_normalized = person_guess_info.get('country', '').lower().strip()
-
-        print(target_city_normalized)
-
-
-
-        def get_state(city_dict):
-            components = city_dict.get('components', {})
-            return components.get('state', '').lower().strip() if components else ''
-
-        guess_state = get_state(person_guess_info)
-        target_state = get_state(city_info)
-
-        if target_country_normalized == 'united states' and guess_country_normalized == 'united states' and guess_state and target_state:
-            if guess_state == target_state:
-                country_hint = f"{guess_state.title()} (green)"
-            else:
-                country_hint = f"{guess_state.title()} (grey)"
-        elif guess_country_normalized == target_country_normalized:
-            country_hint = f"{person_guess_info.get('country')} (green)"
+    # Use the guess argument directly
+    person_guess = guess
+    if not person_guess:
+        print("Invalid guess.")
+        return "Invalid guess."
+    person_guess_normalized = person_guess.lower().replace('city', '').replace('.', '').replace(',', '').strip()
+    person_guess_info = city_api(person_guess)
+    if not person_guess_info:
+        print("Invalid guess info.")
+        return "Invalid guess info."
+    target_city_normalized = city_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
+    guess_city_normalized = person_guess_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
+    target_country_normalized = city_info.get('country', '').lower().strip()
+    guess_country_normalized = person_guess_info.get('country', '').lower().strip()
+    print(target_city_normalized)
+    def get_state(city_dict):
+        components = city_dict.get('components', {})
+        return components.get('state', '').lower().strip() if components else ''
+    guess_state = get_state(person_guess_info)
+    target_state = get_state(city_info)
+    if target_country_normalized == 'united states' and guess_country_normalized == 'united states' and guess_state and target_state:
+        if guess_state == target_state:
+            country_hint = f"{guess_state.title()}, green"
         else:
-            if person_guess_info.get('country') and city_info.get('country'):
-                relative_distance_country = compare_country(person_guess_info.get('country'), city_info.get('country'))
-                if relative_distance_country == "(Yellow)":
-                    country_hint = f"{person_guess_info.get('country')} (yellow)"
-                else:
-                    country_hint = f"{person_guess_info.get('country')} (grey)"
+            country_hint = f"{guess_state.title()}, grey"
+    elif guess_country_normalized == target_country_normalized:
+        country_hint = f"{person_guess_info.get('country')}, green"
+    else:
+        if person_guess_info.get('country') and city_info.get('country'):
+            relative_distance_country = compare_country(person_guess_info.get('country'), city_info.get('country'))
+            if relative_distance_country == "Yellow":
+                country_hint = f"{person_guess_info.get('country')}, yellow"
             else:
-                country_hint = "Unknown"
+                country_hint = f"{person_guess_info.get('country')}, grey"
+        else:
+            country_hint = "Unknown"
+    if guess_city_normalized == target_city_normalized:
+        print(f"Correct! You win! {country_hint}")
+        return(f"Correct! You win! {country_hint}")
+    direction = compare_city(guess, city_info.get('city'), "dir")
+    relative_distance_city = compare_city(guess, city_info.get('city'), "cardinal")
+    to_add = f"{country_hint}, {person_guess_info.get('city')}, {relative_distance_city}, {direction}"
+    print(to_add)
 
-        if guess_city_normalized == target_city_normalized:
-            print(f"Correct! You win! {country_hint}")
-            return(f"Correct! You win! {country_hint}")
-
-        direction = compare_city(guess, city_info.get('city'), "dir")
-        relative_distance_city = compare_city(guess, city_info.get('city'), "cardinal")
-
-        orginal_state
-
-        print(f"{country_hint}, {person_guess_info.get('city')} {relative_distance_city}, {direction}")
-        new_state["guesses"].append(guess)
+    # Split the to_add string at ', ' and append as a list of values
+    to_add_list = to_add.split(', ')
+    if isinstance(new_state["guesses"], list):
+        new_state["guesses"].append(to_add_list)
+    else:
+        new_state["guesses"] = [to_add_list]
 
 if __name__ == "__main__":
-
-    logic(state)
+    state = {
+    'city': 'las vagas',
+    'guesses': [['boston', 'red', 'usa', 'green', 'west']]
+        }
+    print(state)
+    logic("Boston", "New York", state)
+    print("After logic")
+    print(state)
     print("Done!")
