@@ -29,6 +29,59 @@ def grab_random_city(list_of_city):
     print("Hidden City:", city_hidden)
     return city_hidden
 
+def pick_random_city(number_open):
+    json_file_path = r"./photos-database.json"
+    try:
+        with open(json_file_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+
+            local_list_city = data.get("cities", [])
+            
+            random_selections = []
+
+            for i in range(number_open):
+                selected = random.choice(local_list_city)
+                random_selections.append(selected)
+                print(selected)
+
+        return random_selections
+    
+    except FileNotFoundError:
+        print(f"Error: File not found at {json_file_path}")
+        return []
+    except json.JSONDecodeError:
+        print("Error: Failed to decode JSON file.")
+        return []
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return []
+
+def get_city_data(city, data_type):
+    json_file_path = r"./photos-database.json"
+    try:
+        with open(json_file_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+
+            if data_type == "all":
+                local_list_city = [city_data for city_data in local_list_city if city_data["city"].lower() == city.lower()]
+                return local_list_city
+                
+            local_list_city = data.get(f"{data_type}", [])
+            print(local_list_city)
+            return local_list_city
+            
+    
+    except FileNotFoundError:
+        print(f"Error: File not found at {json_file_path}")
+        return []
+    except json.JSONDecodeError:
+        print("Error: Failed to decode JSON file.")
+        return []
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return []
+
+
 def main():
     clear_console()
     cities = fetch_cities_from_json()
@@ -79,3 +132,4 @@ def main():
         else:
             print("Failed to understand guess.")
 
+get_city_data("Boston", "country")
