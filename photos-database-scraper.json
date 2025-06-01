@@ -811,6 +811,12 @@
             "country": "United States",
             "latitude": 37.9791718,
             "longitude": -101.7652375
+        },
+        {
+            "city": "watertown",
+            "country": "United States",
+            "latitude": 42.3652518,
+            "longitude": -71.1843236
         }
     ]
 }
