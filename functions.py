@@ -1,4 +1,4 @@
-from openai import OpenAI
+# from openai import OpenAI
 import os
 import json
 import random
@@ -105,7 +105,11 @@ def compare_city(city1, city2, filepath = "./photos-database.json"):
         print(f"An error occurred: {e}")
         return []  
 
-# def logic():
+def logic():
+
+    guess = input("Guess a city!\n")
+    city = pick_random_city()
+    print(compare_city(city["city"], guess))
 
 
 # def get_city_data(city, data_type):
