@@ -227,8 +227,11 @@ def read_ai_data(city, filepath="photos-database-scraper.json"):
             return data_json["cities"][i].get("ai", "")
 
 def logic(real_city, guess, orginal_state):
-    
 
+    new_state = {
+        "city": real_city,
+        "guesses": f"{orginal_state.get('guesses')}"
+        }
 
     while True:
         city_info_list = get_city_info(real_city)
@@ -299,7 +302,7 @@ def logic(real_city, guess, orginal_state):
         orginal_state
 
         print(f"{country_hint}, {person_guess_info.get('city')} {relative_distance_city}, {direction}")
-
+        new_state["guesses"].append(guess)
 
 if __name__ == "__main__":
 
