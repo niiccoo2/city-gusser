@@ -188,11 +188,13 @@ if __name__ == "__main__":
         city_category = city.replace(' ', '_')
         category_url = f"https://commons.wikimedia.org/wiki/Category:{city_category}"
         image_urls = get_commons_images(category_url, 50)
+        # Only keep JPEG images
+        image_urls = [url for url in image_urls if url.lower().endswith('.jpg') or url.lower().endswith('.jpeg')]
         if not image_urls:
             image_urls = search_commons_images_by_name(city, 10)
+            image_urls = [url for url in image_urls if url.lower().endswith('.jpg') or url.lower().endswith('.jpeg')]
             if not image_urls:
-                # exit(f"No images found for {city}!!!!!!!!!!")
-                print(f"No images found for {city}")
+                print(f"No JPEG images found for {city}")
                 continue
         found = False
         found_author = False
