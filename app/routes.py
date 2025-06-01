@@ -4,7 +4,7 @@ from functions import *
 from app.forms import LoginForm
 state = {
     'city': 'las vagas',
-    'guesses': []
+    'guesses': [['boston', 'red', 'usa', 'green', 'west']]
 }
 
 @app.route('/')
