@@ -177,22 +177,23 @@ def get_city_info(city):
         "latitude": lat,
         "longitude": lng
     }
-def city_add_to_json(city, filepath='photos-database-scraper.json'):
-    city_info = get_city_info(city)
-    city_entry = {
-    'city': city,
-    'country': country,
-    'latitude': latitude,
-    'longitude': longitude,
-    'image': url if found else last_url,
-    'credit': credit,
-    'ai': ""
-    }
-    # Save results to JSON
-    with open(filepath, 'r', encoding='utf-8') as file:
-        data = json.load(file)
-    with open('photos-database-scraper.json', 'w', encoding='utf-8') as file:
-        json.dump({'cities': updated_cities}, file, ensure_ascii=False, indent=4)
+
+# def city_add_to_json(city, filepath='photos-database-scraper.json'):
+#     city_info = get_city_info(city)
+#     city_entry = {
+#     'city': city,
+#     'country': country,
+#     'latitude': latitude,
+#     'longitude': longitude,
+#     'image': url if found else last_url,
+#     'credit': credit,
+#     'ai': ""
+#     }
+#     # Save results to JSON
+#     with open(filepath, 'r', encoding='utf-8') as file:
+#         data = json.load(file)
+#     with open('photos-database-scraper.json', 'w', encoding='utf-8') as file:
+#         json.dump({'cities': updated_cities}, file, ensure_ascii=False, indent=4)
 
 def add_city_to_json(city):
     city_info = get_city_info(city)
@@ -204,21 +205,15 @@ def add_city_to_json(city):
                 data = json.load(f)
         except Exception:
             data = {"cities": []}
-        # Add new city
+        # Add new city if not present
         if "cities" not in data or not isinstance(data["cities"], list):
             data["cities"] = []
-        # Avoid duplicates
         if not any(c.get('city', '').lower() == city_info['city'].lower() for c in data['cities']):
             data["cities"].append(city_info)
-            city_add_to_json(data)  # Recursive call to add city info
-            # with open(json_file, 'w', encoding='utf-8') as f:
-            #     json.dump(data, f, ensure_ascii=False, indent=4)
-            # print(f"Added {city_info['city']} to {json_file}")
-        #else:
-            #print(f"{city_info['city']} already in database.")
-    else:
-        # print(f"City not found or error: {city_info.get('error') if city_info else 'Unknown error'}")
-        pass
+            with open(json_file, 'w', encoding='utf-8') as f:
+                json.dump(data, f, ensure_ascii=False, indent=4)
+        # else: already present, do nothing
+    # else: error or not found, do nothing
 
 def city_api(city):
     info = get_city_info(city)
