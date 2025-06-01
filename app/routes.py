@@ -17,6 +17,8 @@ def index():
         city = pick_random_city()
     # else:
     #     city = get_city_info(state.get('city'))
+    else:
+        city = city_info(state.get('city'))
     print(city)
     image = city[0].get('image')
     blurb = get_summary(f"{city[0].get('city')}, {city[0].get('country')}")
