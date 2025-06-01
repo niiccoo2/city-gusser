@@ -815,6 +815,14 @@
             "longitude": -71.1843236,
             "image": "https://upload.wikimedia.org/wikipedia/commons/2/27/Sawins_Pond_in_Watertown_MA_Oct_2024_3.jpg",
             "credit": "Photo by 4300streetcar / Wikimedia Commons, CC BY 4.0"
+        },
+        {
+            "city": "New York",
+            "country": "United States",
+            "latitude": 40.7127281,
+            "longitude": -74.0060152,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/b/bc/Training_Session_By_Icmsinc_in_Syracuse_NY.jpg",
+            "credit": "Photo by Icmsinc / Wikimedia Commons, CC BY 4.0"
         }
     ]
 }

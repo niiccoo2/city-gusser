@@ -1,11 +1,31 @@
 {% extends "base.html" %}
 
 {% block content %}
-<html>
-    <body>
-        <h1>Hello, {{ user.username }}!</h1>
-        <img src="{{ image }}" height="250" width="500">
-        <h1>{{ blurb }}</h1>
-    </body>
+
+<div class="vertical-line"></div>
+<div class="split left">
+    <div class="content">
+        <img src="{{ image }}" height="200" width="400">
+        <h2>Info:</h2>
+        <p>{{ blurb }}</p>
+    </div>
+</div>
+
+<div class="split right">
+    <div class="content">
+        <h2>Table Title</h2>
+        <table>
+            <tr>
+                <th>Header 1</th>
+                <th>Header 2</th>
+            </tr>
+            <tr>
+                <td>Data 1</td>
+                <td>Data 2</td>
+            </tr>
+        </table>
+    </div>
+</div>
 </html>
+
 {% endblock %}
