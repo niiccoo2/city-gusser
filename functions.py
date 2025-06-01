@@ -2,7 +2,9 @@ from openai import OpenAI #type: ignore
 import os
 import json
 import random
-import requests #type: ignore
+import requests
+from scraper import *
+
 
 def get_summary(city):
     with open("api.txt", "r") as api:
@@ -37,6 +39,7 @@ def pick_random_city(number_of_cities = 1, filepath = "./photos-database-scraper
                 selected = random.choice(local_list_city)
                 random_selections.append(selected)
                 #print(selected)
+
 
         return random_selections
     
@@ -186,20 +189,15 @@ def add_city_to_json(city):
                 data = json.load(f)
         except Exception:
             data = {"cities": []}
-        # Add new city
+        # Add new city if not present
         if "cities" not in data or not isinstance(data["cities"], list):
             data["cities"] = []
-        # Avoid duplicates
         if not any(c.get('city', '').lower() == city_info['city'].lower() for c in data['cities']):
             data["cities"].append(city_info)
             with open(json_file, 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=4)
-            # print(f"Added {city_info['city']} to {json_file}")
-        #else:
-            #print(f"{city_info['city']} already in database.")
-    else:
-        # print(f"City not found or error: {city_info.get('error') if city_info else 'Unknown error'}")
-        pass
+        # else: already present, do nothing
+    # else: error or not found, do nothing
 
 def city_api(city):
     info = get_city_info(city)
@@ -230,7 +228,13 @@ def read_ai_data(city, filepath="photos-database-scraper.json"):
 
 def logic():
     # Pick the random city ONCE per game, not every guess
-    city_info_list = pick_random_city(1, filepath="photos-database-scraper.json")
+    while True:
+        city_info_list = pick_random_city(1, filepath="photos-database-scraper.json")
+        if not city_info_list or 'image' not in city_info_list[0]:
+            continue
+        else:
+            break
+        
     if not city_info_list:
         print("No cities in database.")
         return "No Cities In DataBase"
@@ -296,4 +300,4 @@ def logic():
 
 if __name__ == "__main__":
     logic()
-    save_and_quit() #type: ignore #xavier this is you DO IT.
+    print("Done!")
