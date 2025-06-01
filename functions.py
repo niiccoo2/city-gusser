@@ -63,7 +63,7 @@ def compare_city(city1, city2, filepath = "./photos-database-scraper.json"):
 
             if not city1_data or not city2_data:
                 print("One or both cities not found.")
-                return None
+                return "One or both cities not found."
 
             # Try both 'lat' and 'latitude' keys for compatibility
             city_lat = city1_data.get('lat') if city1_data.get('lat') is not None else city1_data.get('latitude')
@@ -71,9 +71,14 @@ def compare_city(city1, city2, filepath = "./photos-database-scraper.json"):
             guess_lat = city2_data.get('lat') if city2_data.get('lat') is not None else city2_data.get('latitude')
             guess_lon = city2_data.get('lon') if city2_data.get('lon') is not None else city2_data.get('longitude')
 
-            # Check for missing data
-            if None in (city_lat, city_lon, guess_lat, guess_lon):
-                print("Missing latitude or longitude data for one or both cities.")
+            # Check for missing data and convert to float if needed
+            try:
+                city_lat = float(city_lat)
+                city_lon = float(city_lon)
+                guess_lat = float(guess_lat)
+                guess_lon = float(guess_lon)
+            except (TypeError, ValueError):
+                print("Missing or invalid latitude or longitude data for one or both cities.")
                 return "Missing location data."
 
             output = ""
@@ -104,16 +109,14 @@ def compare_city(city1, city2, filepath = "./photos-database-scraper.json"):
             return output
     except FileNotFoundError:
         print(f"Error: File not found at {filepath}")
-        return []
+        return "File not found."
     except json.JSONDecodeError:
         print("Error: Failed to decode JSON file.")
-        return []
+        return "JSON decode error."
     except Exception as e:
         print(f"An error occurred: {e}")
-        return []
-
-
-
+        return f"Error: {e}"
+    
 
 def load_opencage_key():
     env_path = os.path.join(os.path.dirname(__file__), 'scraper.env')
@@ -213,6 +216,3 @@ def logic():
         dnd = compare_city(guess, city_info.get('city')) #direction and distance = dnd
         
         print(dnd)
-
-if __name__ == "__main__":
-    logic()
