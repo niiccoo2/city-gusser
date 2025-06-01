@@ -60,7 +60,7 @@ def past_guesses():
                     info.append(YELLOW)
                 else:
                     info.append(RESET)
-            print(guesses[i][l])
+            # print(guesses[i][l])
             info.append(str(guesses[i][l]))
             info.append(" ")
         info.append("\n")
@@ -85,7 +85,7 @@ def get_guess():
         exit()
     
     # Make guess into a list with index 0 being city, 1 being country, 2 being a list of coordinates.
-    for_guess = [guess,input("Country?\n"),[input(),input()]]
+    for_guess = [guess,"USA",[-12.125,-85.2]]
 
     return guess
 
@@ -93,7 +93,9 @@ while True:
     guesses.append(guess)
     guess = get_guess()
     print("IMAGE OF", city_name)
+    time.sleep(5)
     os.system('cls')
+    time.sleep(5)
     print("".join(past_guesses()))
     time.sleep(5)
     # break
