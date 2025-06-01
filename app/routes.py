@@ -1,10 +1,11 @@
 from app import app
-import json
+from main import fetch_cities_from_json
 
 @app.route('/')
 @app.route('/index')
 def index():
-    
+    cities = fetch_cities_from_json()
+    cities.get('image')
     user = {'username': 'Nico'}
     return '''
 <html>
