@@ -58,4 +58,33 @@ def get_city_data(city, data_type):
         print(f"An error occurred: {e}")
         return []
 
-get_city_data("Boston", "country")
+def compare_city(city1, city2):
+    json_file_path = r"./photos-database.json"
+    try:
+        with open(json_file_path, "r", encoding="utf-8") as file:
+            data = json.load(file)
+
+            city_lat = (city1.get('lat', 'No image available'))
+            city_lon = (city1.get('lon', 'No image available'))
+
+            guess_lat = (city2.get('lat', 'No image available'))
+            guess_lon = (city2_guess.get('lon', 'No image available'))
+
+            print(city_lat, city_lon)
+            print(guess_lat, guess_lon)
+
+            if abs((guess_lon+guess_lat)-(city_lon+city_lat)) < 10:
+                print("Yellow (debug: close)")
+            else:
+                print("Grey (debug: far)") 
+    
+    except FileNotFoundError:
+        print(f"Error: File not found at {json_file_path}")
+        return []
+    except json.JSONDecodeError:
+        print("Error: Failed to decode JSON file.")
+        return []
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return []  
+
