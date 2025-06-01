@@ -90,10 +90,10 @@ def compare_city(city1, city2, filepath = "./photos-database.json"):
 
             if abs((guess_lon + guess_lat) - (city_lon + city_lat)) < 20:
                 print("Yellow (debug: close)")
-                output += " Yellow (debug: close)"
+                output += " close"
             else:
                 print("Grey (debug: far)")
-                output += " Grey (debug: far)"
+                output += " far"
             return output
     except FileNotFoundError:
         print(f"Error: File not found at {filepath}")
@@ -104,6 +104,8 @@ def compare_city(city1, city2, filepath = "./photos-database.json"):
     except Exception as e:
         print(f"An error occurred: {e}")
         return []  
+
+# def logic():
 
 
 # def get_city_data(city, data_type):
