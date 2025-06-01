@@ -214,3 +214,6 @@ if __name__ == "__main__":
             nolicenses += 1
     print('Cities with no author:', noauthor)
     print('Cities with no license:', nolicenses)
+    with open('photos-database-scraper.json', 'w', encoding='utf-8') as file:
+        json.dump(data, file, ensure_ascii=False, indent=4)
+    print("Done!")
