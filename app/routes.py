@@ -5,8 +5,8 @@ import main
 @app.route('/')
 @app.route('/index')
 def index():
-    cities = main.fetch_cities_from_json()
-    random_image = main.grab_random_city(cities)
+    city = main.
+    nice_city = f"{city[0].get("city")}, {city[0].get("country")}"
     image = random_image.get('image')
     
     user = {'username': 'Nico'}
