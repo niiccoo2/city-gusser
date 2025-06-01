@@ -1,7 +1,7 @@
 import json
 
-# Replace with your actual JSON file path
-json_file_path = r"C:\Users\Nico\Documents\programing\python\city-gusser\photos-database.json"
+json_file_path = r"./photos-database.json"
+
 
 def json_test():
     try:
@@ -36,15 +36,16 @@ def fetch_json(selected_type, selected_city):
 
     if not cities:
         print("No cities found in JSON.")
-        return
+        return None
     
-    city = next((c for c in cities if c["city"] == f"{selected_city}"), None)
+    city = next((c for c in cities if c["city"] == selected_city), None)
+    
     if city:
         print(f"Got: {city}")
+        return city.get('city')
     else:
         print("City not found.")
+        return None
 
-    obj = city.get('city')
-
-    return obj
-
+if __name__ == "__main__":
+    json_test()
