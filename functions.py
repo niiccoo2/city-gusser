@@ -4,7 +4,6 @@ import json
 import random
 import requests #type: ignore
 
-
 def get_summary(city):
     with open("api.txt", "r") as api:
         key = api.read()
@@ -52,7 +51,7 @@ def pick_random_city(number_of_cities = 1, filepath = "./photos-database-scraper
         return []
     
 
-def compare_city(city1, city2, filepath = "./photos-database-scraper.json"):
+def compare_city(city1, city2, mode, filepath = "./photos-database-scraper.json"):
     try:
         with open(filepath, "r", encoding="utf-8") as file:
             data = json.load(file)
@@ -62,59 +61,46 @@ def compare_city(city1, city2, filepath = "./photos-database-scraper.json"):
             city2_data = next((c for c in local_list_city if c["city"].lower() == city2.lower()), None)
 
             if not city1_data or not city2_data:
-                print("One or both cities not found.")
                 return "One or both cities not found."
 
-            # Try both 'lat' and 'latitude' keys for compatibility
             city_lat = city1_data.get('lat') if city1_data.get('lat') is not None else city1_data.get('latitude')
             city_lon = city1_data.get('lon') if city1_data.get('lon') is not None else city1_data.get('longitude')
             guess_lat = city2_data.get('lat') if city2_data.get('lat') is not None else city2_data.get('latitude')
             guess_lon = city2_data.get('lon') if city2_data.get('lon') is not None else city2_data.get('longitude')
 
-            # Check for missing data and convert to float if needed
             try:
                 city_lat = float(city_lat)
                 city_lon = float(city_lon)
                 guess_lat = float(guess_lat)
                 guess_lon = float(guess_lon)
             except (TypeError, ValueError):
-                print("Missing or invalid latitude or longitude data for one or both cities.")
                 return "Missing location data."
 
             output = ""
 
-            if abs(city_lon - guess_lon) > abs(city_lat - guess_lat):
-                if city_lon > guess_lon:
-                    print("East")
-                    output = "East"
-                else:
-                    print("West")
-                    output = "West"
+            if mode == "dir":
+                if abs(city_lon - guess_lon) > abs(city_lat - guess_lat):
+                    if city_lon > guess_lon:
+                        output = "East"
+                    else:
+                        output = "West"
+                elif mode == "cardinal":
+                    if city_lat > guess_lat:
+                        output = "North"
+                    else:
+                        output = "South"
             else:
-                if city_lat > guess_lat:
-                    print("North")
-                    output = "North"
+                if abs((guess_lon + guess_lat) - (city_lon + city_lat)) < 20:
+                    output = "(Yellow)"
                 else:
-                    print("South")
-                    output = "South"
-            print(city_lat, city_lon)
-            print(guess_lat, guess_lon)
+                    output = "(Grey)"
 
-            if abs((guess_lon + guess_lat) - (city_lon + city_lat)) < 20:
-                print("Yellow (debug: close)")
-                output += "(Yellow)"
-            else:
-                print("Grey (debug: far)")
-                output += "(Grey)"
             return output
     except FileNotFoundError:
-        print(f"Error: File not found at {filepath}")
         return "File not found."
     except json.JSONDecodeError:
-        print("Error: Failed to decode JSON file.")
         return "JSON decode error."
     except Exception as e:
-        print(f"An error occurred: {e}")
         return f"Error: {e}"
     
 
@@ -171,11 +157,12 @@ def add_city_to_json(city):
             data["cities"].append(city_info)
             with open(json_file, 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=4)
-            print(f"Added {city_info['city']} to {json_file}")
+            # print(f"Added {city_info['city']} to {json_file}")
         #else:
             #print(f"{city_info['city']} already in database.")
     else:
-        print(f"City not found or error: {city_info.get('error') if city_info else 'Unknown error'}")
+        # print(f"City not found or error: {city_info.get('error') if city_info else 'Unknown error'}")
+        pass
 
 
 def city_api(city):
@@ -186,7 +173,6 @@ def city_api(city):
             print(info['error'])
             return None
         else:
-            print(info.get('city'))
             return info  # Return the full dict
     else:
         print('No data returned.')
@@ -204,17 +190,15 @@ def logic():
         city_info_list = pick_random_city(1, filepath="photos-database-scraper.json")
         if not city_info_list:
             print("No cities in database.")
-            return
+            return "No Cities In DataBase"
         city_info = city_info_list[0]
 
         if guess_info.get('city', '').lower() == city_info.get('city', '').lower():
             print("Correct! You win!")
-            break
+            return("Correct! You win!")
 
-        print("Incorrect Guess")
-
-        dnd = compare_city(guess, city_info.get('city'))  # direction and distance = dnd
-        print(dnd)
+        direction = compare_city(guess, city_info.get('city'), "dir")  # direction and distance = dnd
+        relative_distance = compare_city(guess, city_info.get('city'), "cardinal")
 
         guess_country = guess_info.get('country', '').strip()
         city_country = city_info.get('country', '').strip()
@@ -225,7 +209,9 @@ def logic():
             else:
                 country_hint = f"{guess_country} (grey)"
         else:
-            print("Country information unavailable.")
             country_hint = "Unknown"
+        
+        print(f"{country_hint}, {guess_info.get('city')} {relative_distance}, {direction}")
 
-        print(country_hint, ",", guess_info.get('city'),",", dnd)
+if __name__ == "__main__":
+    logic()
