@@ -226,10 +226,12 @@ def read_ai_data(city, filepath="photos-database-scraper.json"):
         if data_json["cities"][i]["city"].lower() == city.lower():
             return data_json["cities"][i].get("ai", "")
 
-def logic():
-    # Pick the random city ONCE per game, not every guess
+def logic(real_city, guess, orginal_state):
+    
+
+
     while True:
-        city_info_list = pick_random_city(1, filepath="photos-database-scraper.json")
+        city_info_list = get_city_info(real_city)
         if not city_info_list or 'image' not in city_info_list[0]:
             continue
         else:
@@ -246,20 +248,18 @@ def logic():
         if try_number == 5:
             break
 
-        guess = input("Guess a city!\n")
+        person_guess = guess
         try_number += 1
-        guess_normalized = guess.lower().replace('city', '').replace('.', '').replace(',', '').strip()
-        guess_info = city_api(guess)
-        if not guess_info:
+        person_guess_normalized = person_guess.lower().replace('city', '').replace('.', '').replace(',', '').strip()
+        person_guess_info = city_api(person_guess)
+        if not person_guess:
             print("Invalid guess.")
             continue
 
-        
-
         target_city_normalized = city_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
-        guess_city_normalized = guess_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
+        guess_city_normalized = person_guess_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
         target_country_normalized = city_info.get('country', '').lower().strip()
-        guess_country_normalized = guess_info.get('country', '').lower().strip()
+        guess_country_normalized = person_guess_info.get('country', '').lower().strip()
 
         print(target_city_normalized)
 
@@ -269,7 +269,7 @@ def logic():
             components = city_dict.get('components', {})
             return components.get('state', '').lower().strip() if components else ''
 
-        guess_state = get_state(guess_info)
+        guess_state = get_state(person_guess_info)
         target_state = get_state(city_info)
 
         if target_country_normalized == 'united states' and guess_country_normalized == 'united states' and guess_state and target_state:
@@ -278,14 +278,14 @@ def logic():
             else:
                 country_hint = f"{guess_state.title()} (grey)"
         elif guess_country_normalized == target_country_normalized:
-            country_hint = f"{guess_info.get('country')} (green)"
+            country_hint = f"{person_guess_info.get('country')} (green)"
         else:
-            if guess_info.get('country') and city_info.get('country'):
-                relative_distance_country = compare_country(guess_info.get('country'), city_info.get('country'))
+            if person_guess_info.get('country') and city_info.get('country'):
+                relative_distance_country = compare_country(person_guess_info.get('country'), city_info.get('country'))
                 if relative_distance_country == "(Yellow)":
-                    country_hint = f"{guess_info.get('country')} (yellow)"
+                    country_hint = f"{person_guess_info.get('country')} (yellow)"
                 else:
-                    country_hint = f"{guess_info.get('country')} (grey)"
+                    country_hint = f"{person_guess_info.get('country')} (grey)"
             else:
                 country_hint = "Unknown"
 
@@ -295,9 +295,13 @@ def logic():
 
         direction = compare_city(guess, city_info.get('city'), "dir")
         relative_distance_city = compare_city(guess, city_info.get('city'), "cardinal")
-        print(f"{country_hint}, {guess_info.get('city')} {relative_distance_city}, {direction}")
+
+        orginal_state
+
+        print(f"{country_hint}, {person_guess_info.get('city')} {relative_distance_city}, {direction}")
 
 
 if __name__ == "__main__":
-    logic()
+
+    logic(state)
     print("Done!")
