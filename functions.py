@@ -65,10 +65,16 @@ def compare_city(city1, city2, filepath = "./photos-database-scraper.json"):
                 print("One or both cities not found.")
                 return None
 
-            city_lat = city1_data.get('lat')
-            city_lon = city1_data.get('lon')
-            guess_lat = city2_data.get('lat')
-            guess_lon = city2_data.get('lon')
+            # Try both 'lat' and 'latitude' keys for compatibility
+            city_lat = city1_data.get('lat') if city1_data.get('lat') is not None else city1_data.get('latitude')
+            city_lon = city1_data.get('lon') if city1_data.get('lon') is not None else city1_data.get('longitude')
+            guess_lat = city2_data.get('lat') if city2_data.get('lat') is not None else city2_data.get('latitude')
+            guess_lon = city2_data.get('lon') if city2_data.get('lon') is not None else city2_data.get('longitude')
+
+            # Check for missing data
+            if None in (city_lat, city_lon, guess_lat, guess_lon):
+                print("Missing latitude or longitude data for one or both cities.")
+                return "Missing location data."
 
             output = ""
 
@@ -104,7 +110,7 @@ def compare_city(city1, city2, filepath = "./photos-database-scraper.json"):
         return []
     except Exception as e:
         print(f"An error occurred: {e}")
-        return []  
+        return []
 
 
 
