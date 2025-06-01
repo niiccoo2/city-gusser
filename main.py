@@ -65,6 +65,8 @@ def past_guesses():
             info.append(" ")
         info.append("\n")
         info.append(RESET)
+    print(info)
+    time.slee(5)
     return info
 
 def get_guess():
@@ -72,12 +74,7 @@ def get_guess():
     global GREEN
     global RESET
     gnum -=-1
-    while True:
-        guess = input("Guess a city!\n").lower()
-        if guess.isalpha() == True:
-            break
-        else:
-            print("Please input the name of a city.")
+    guess = input("Guess a city!\n").lower()
     if guess == "help":
         pass # MAYBE PUT ALL OF THE POSSIBLE CITIES HERE JUST IN CASE, YOU NEVER KNOW.
     elif guess == city_name.lower():
