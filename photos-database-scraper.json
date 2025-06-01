@@ -4,601 +4,801 @@
             "city": "Tokyo",
             "country": "Japan",
             "latitude": 35.6768601,
-            "longitude": 139.7638947
+            "longitude": 139.7638947,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e8/Tokyo_Tower_at_night_%281%29.jpg",
+            "credit": "Photo by Melv_L - MACASR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Boston",
             "country": "United States",
             "latitude": 42.3554334,
-            "longitude": -71.060511
+            "longitude": -71.060511,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/1/17/Boston_Back_Bay_reflection.jpg/250px-Boston_Back_Bay_reflection.jpg",
+            "credit": "Photo by Robbie Shade / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "New York City",
             "country": "United States",
             "latitude": 40.7127281,
-            "longitude": -74.0060152
+            "longitude": -74.0060152,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Times_Square%2C_Broadway%2C_May_2016.jpg/250px-Times_Square%2C_Broadway%2C_May_2016.jpg",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "London",
             "country": "United Kingdom",
             "latitude": 51.5074456,
-            "longitude": -0.1277653
+            "longitude": -0.1277653,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Paris",
             "country": "France",
             "latitude": 48.8534951,
-            "longitude": 2.3483915
+            "longitude": 2.3483915,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Los Angeles",
             "country": "United States",
             "latitude": 34.0536909,
-            "longitude": -118.242766
+            "longitude": -118.242766,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Beijing",
             "country": "China",
             "latitude": 40.190632,
-            "longitude": 116.412144
+            "longitude": 116.412144,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Dubai",
             "country": "United Arab Emirates",
             "latitude": 25.0742823,
-            "longitude": 55.1885387
+            "longitude": 55.1885387,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Rome",
             "country": "Italy",
             "latitude": 41.8933203,
-            "longitude": 12.4829321
+            "longitude": 12.4829321,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Berlin",
             "country": "Germany",
             "latitude": 52.510885,
-            "longitude": 13.3989367
+            "longitude": 13.3989367,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Sydney",
             "country": "Australia",
             "latitude": -33.8698439,
-            "longitude": 151.2082848
+            "longitude": 151.2082848,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Toronto",
             "country": "Canada",
             "latitude": 43.6534817,
-            "longitude": -79.3839347
+            "longitude": -79.3839347,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Moscow",
             "country": "Russia",
             "latitude": 55.625578,
-            "longitude": 37.6063916
+            "longitude": 37.6063916,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Shanghai",
             "country": "China",
             "latitude": 31.2312707,
-            "longitude": 121.4700152
+            "longitude": 121.4700152,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Chicago",
             "country": "United States",
             "latitude": 41.8755616,
-            "longitude": -87.6244212
+            "longitude": -87.6244212,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Madrid",
             "country": "Spain",
             "latitude": 40.4167047,
-            "longitude": -3.7035825
+            "longitude": -3.7035825,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Singapore",
             "country": "Singapore",
             "latitude": 1.357107,
-            "longitude": 103.8194992
+            "longitude": 103.8194992,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Seoul",
             "country": "South Korea",
             "latitude": 37.5666791,
-            "longitude": 126.9782914
+            "longitude": 126.9782914,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "San Francisco",
             "country": "United States",
             "latitude": 37.7792588,
-            "longitude": -122.4193286
+            "longitude": -122.4193286,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Istanbul",
             "country": "Turkey",
             "latitude": 41.006381,
-            "longitude": 28.9758715
+            "longitude": 28.9758715,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Mexico City",
             "country": "Mexico",
             "latitude": 19.4326296,
-            "longitude": -99.1331785
+            "longitude": -99.1331785,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Bangkok",
             "country": "Thailand",
             "latitude": 13.7524938,
-            "longitude": 100.4935089
+            "longitude": 100.4935089,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Buenos Aires",
             "country": "Argentina",
             "latitude": -34.6083696,
-            "longitude": -58.4440583
+            "longitude": -58.4440583,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Barcelona",
             "country": "Spain",
             "latitude": 41.3825802,
-            "longitude": 2.177073
+            "longitude": 2.177073,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Sao Paulo",
             "country": "Brazil",
             "latitude": -23.5506507,
-            "longitude": -46.6333824
+            "longitude": -46.6333824,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Delhi",
             "country": "India",
             "latitude": 28.6273928,
-            "longitude": 77.1716954
+            "longitude": 77.1716954,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Hong Kong",
             "country": "China",
             "latitude": 22.350627,
-            "longitude": 114.1849161
+            "longitude": 114.1849161,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Vienna",
             "country": "Austria",
             "latitude": 48.2083537,
-            "longitude": 16.3725042
+            "longitude": 16.3725042,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Amsterdam",
             "country": "Netherlands",
             "latitude": 52.3730796,
-            "longitude": 4.8924534
+            "longitude": 4.8924534,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Washington, D.C.",
             "country": "United States",
             "latitude": 38.8950368,
-            "longitude": -77.0365427
+            "longitude": -77.0365427,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Prague",
             "country": "Czechia",
             "latitude": 50.0596288,
-            "longitude": 14.4464593
+            "longitude": 14.4464593,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Copenhagen",
             "country": "Denmark",
             "latitude": 55.6867243,
-            "longitude": 12.5700724
+            "longitude": 12.5700724,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Milan",
             "country": "Italy",
             "latitude": 45.4641943,
-            "longitude": 9.1896346
+            "longitude": 9.1896346,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Stockholm",
             "country": "Sweden",
             "latitude": 59.3251172,
-            "longitude": 18.0710935
+            "longitude": 18.0710935,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Jakarta",
             "country": "Indonesia",
             "latitude": -6.1754049,
-            "longitude": 106.827168
+            "longitude": 106.827168,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Munich",
             "country": "Germany",
             "latitude": 48.1371079,
-            "longitude": 11.5753822
+            "longitude": 11.5753822,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Zurich",
             "country": "Switzerland",
             "latitude": 47.3744489,
-            "longitude": 8.5410422
+            "longitude": 8.5410422,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Brussels",
             "country": "Belgium",
             "latitude": 50.8465573,
-            "longitude": 4.351697
+            "longitude": 4.351697,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Johannesburg",
             "country": "South Africa",
             "latitude": -26.205,
-            "longitude": 28.049722
+            "longitude": 28.049722,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Warsaw",
             "country": "Poland",
             "latitude": 52.2319581,
-            "longitude": 21.0067249
+            "longitude": 21.0067249,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Budapest",
             "country": "Hungary",
             "latitude": 47.4978789,
-            "longitude": 19.0402383
+            "longitude": 19.0402383,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Lisbon",
             "country": "Portugal",
             "latitude": 38.7077507,
-            "longitude": -9.1365919
+            "longitude": -9.1365919,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Vancouver",
             "country": "Canada",
             "latitude": 49.2608724,
-            "longitude": -123.113952
+            "longitude": -123.113952,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Doha",
             "country": "Qatar",
             "latitude": 25.2856329,
-            "longitude": 51.5264162
+            "longitude": 51.5264162,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Abu Dhabi",
             "country": "United Arab Emirates",
             "latitude": 24.4538352,
-            "longitude": 54.3774014
+            "longitude": 54.3774014,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Riyadh",
             "country": "Saudi Arabia",
             "latitude": 24.638916,
-            "longitude": 46.7160104
+            "longitude": 46.7160104,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Auckland",
             "country": "New Zealand",
             "latitude": -36.852095,
-            "longitude": 174.7631803
+            "longitude": 174.7631803,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Oslo",
             "country": "Norway",
             "latitude": 59.9133301,
-            "longitude": 10.7389701
+            "longitude": 10.7389701,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Helsinki",
             "country": "Finland",
             "latitude": 60.1674881,
-            "longitude": 24.9427473
+            "longitude": 24.9427473,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Manila",
             "country": "Philippines",
             "latitude": 14.5904492,
-            "longitude": 120.9803621
+            "longitude": 120.9803621,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Nairobi",
             "country": "Kenya",
             "latitude": -1.3026148,
-            "longitude": 36.828842
+            "longitude": 36.828842,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Casablanca",
             "country": "Morocco",
             "latitude": 33.5945144,
-            "longitude": -7.6200284
+            "longitude": -7.6200284,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Cape Town",
             "country": "South Africa",
             "latitude": -33.9288301,
-            "longitude": 18.4172197
+            "longitude": 18.4172197,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Lagos",
             "country": "Nigeria",
             "latitude": 6.4550575,
-            "longitude": 3.3941795
+            "longitude": 3.3941795,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Santiago",
             "country": "Costa Rica",
             "latitude": 9.8694792,
-            "longitude": -83.7980749
+            "longitude": -83.7980749,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Bogota",
             "country": "Colombia",
             "latitude": 4.6534109,
-            "longitude": -74.0836547
+            "longitude": -74.0836547,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Lima",
             "country": "Peru",
             "latitude": -12.0621065,
-            "longitude": -77.0365256
+            "longitude": -77.0365256,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Caracas",
             "country": "Venezuela",
             "latitude": 10.5060934,
-            "longitude": -66.9146008
+            "longitude": -66.9146008,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Montreal",
             "country": "Canada",
             "latitude": 45.5031824,
-            "longitude": -73.5698065
+            "longitude": -73.5698065,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Philadelphia",
             "country": "United States",
             "latitude": 39.9527237,
-            "longitude": -75.1635262
+            "longitude": -75.1635262,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Atlanta",
             "country": "United States",
             "latitude": 33.7544657,
-            "longitude": -84.3898151
+            "longitude": -84.3898151,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Houston",
             "country": "United States",
             "latitude": 29.7589382,
-            "longitude": -95.3676974
+            "longitude": -95.3676974,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Phoenix",
             "country": "United States",
             "latitude": 33.4484367,
-            "longitude": -112.074141
+            "longitude": -112.074141,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Dallas",
             "country": "United States",
             "latitude": 32.7762719,
-            "longitude": -96.7968559
+            "longitude": -96.7968559,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Miami",
             "country": "United States",
             "latitude": 25.7741728,
-            "longitude": -80.19362
+            "longitude": -80.19362,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Seattle",
             "country": "United States",
             "latitude": 47.6038321,
-            "longitude": -122.330062
+            "longitude": -122.330062,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "San Diego",
             "country": "United States",
             "latitude": 32.7174202,
-            "longitude": -117.162772
+            "longitude": -117.162772,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Detroit",
             "country": "United States",
             "latitude": 42.3315509,
-            "longitude": -83.0466403
+            "longitude": -83.0466403,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Denver",
             "country": "United States",
             "latitude": 39.7392364,
-            "longitude": -104.984862
+            "longitude": -104.984862,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Charlotte",
             "country": "United States",
             "latitude": 35.2272086,
-            "longitude": -80.8430827
+            "longitude": -80.8430827,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Kuala Lumpur",
             "country": "Malaysia",
             "latitude": 3.1526589,
-            "longitude": 101.7022205
+            "longitude": 101.7022205,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Hanoi",
             "country": "Vietnam",
             "latitude": 21.0283334,
-            "longitude": 105.854041
+            "longitude": 105.854041,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Ho Chi Minh City",
             "country": "Vietnam",
             "latitude": 10.7763897,
-            "longitude": 106.7011391
+            "longitude": 106.7011391,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Lahore",
             "country": "Pakistan",
             "latitude": 31.5656822,
-            "longitude": 74.3141829
+            "longitude": 74.3141829,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Karachi",
             "country": "Pakistan",
             "latitude": 24.8546842,
-            "longitude": 67.0207055
+            "longitude": 67.0207055,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Bangalore",
             "country": "India",
             "latitude": 12.9767936,
-            "longitude": 77.590082
+            "longitude": 77.590082,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Hyderabad",
             "country": "India",
             "latitude": 17.360589,
-            "longitude": 78.4740613
+            "longitude": 78.4740613,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Chennai",
             "country": "India",
             "latitude": 13.0836939,
-            "longitude": 80.270186
+            "longitude": 80.270186,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Pune",
             "country": "India",
             "latitude": 18.5213738,
-            "longitude": 73.8545071
+            "longitude": 73.8545071,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Ahmedabad",
             "country": "India",
             "latitude": 23.0215374,
-            "longitude": 72.5800568
+            "longitude": 72.5800568,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Brisbane",
             "country": "Australia",
             "latitude": -27.4689623,
-            "longitude": 153.0235009
+            "longitude": 153.0235009,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Perth",
             "country": "Australia",
             "latitude": -31.9558967,
-            "longitude": 115.8605784
+            "longitude": 115.8605784,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Melbourne",
             "country": "Australia",
             "latitude": -37.8142454,
-            "longitude": 144.9631732
+            "longitude": 144.9631732,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Adelaide",
             "country": "Australia",
             "latitude": -34.9281805,
-            "longitude": 138.5999312
+            "longitude": 138.5999312,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Edinburgh",
             "country": "United Kingdom",
             "latitude": 55.9533456,
-            "longitude": -3.1883749
+            "longitude": -3.1883749,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Belfast",
             "country": "United Kingdom",
             "latitude": 54.5975804,
-            "longitude": -5.9277097
+            "longitude": -5.9277097,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Glasgow",
             "country": "United Kingdom",
             "latitude": 55.861155,
-            "longitude": -4.2501687
+            "longitude": -4.2501687,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Dublin",
             "country": "Ireland",
             "latitude": 53.3493795,
-            "longitude": -6.2605593
+            "longitude": -6.2605593,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Reykjavik",
             "country": "Iceland",
             "latitude": 64.145981,
-            "longitude": -21.9422367
+            "longitude": -21.9422367,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Tallinn",
             "country": "Estonia",
             "latitude": 59.4372155,
-            "longitude": 24.7453688
+            "longitude": 24.7453688,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Riga",
             "country": "Latvia",
             "latitude": 56.9493977,
-            "longitude": 24.1051846
+            "longitude": 24.1051846,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Vilnius",
             "country": "Lithuania",
             "latitude": 54.6870458,
-            "longitude": 25.2829111
+            "longitude": 25.2829111,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Belgrade",
             "country": "Serbia",
             "latitude": 44.8178131,
-            "longitude": 20.4568974
+            "longitude": 20.4568974,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Kiev",
             "country": "Ukraine",
             "latitude": 50.4500336,
-            "longitude": 30.5241361
+            "longitude": 30.5241361,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Bucharest",
             "country": "Romania",
             "latitude": 44.4361414,
-            "longitude": 26.1027202
+            "longitude": 26.1027202,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Sofia",
             "country": "Bulgaria",
             "latitude": 42.6977028,
-            "longitude": 23.3217359
+            "longitude": 23.3217359,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Tbilisi",
             "country": "Georgia",
             "latitude": 41.6934591,
-            "longitude": 44.8014495
+            "longitude": 44.8014495,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Yerevan",
             "country": "Armenia",
             "latitude": 40.1777112,
-            "longitude": 44.5126233
+            "longitude": 44.5126233,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Baku",
             "country": "Azerbaijan",
             "latitude": 40.3755885,
-            "longitude": 49.8328009
+            "longitude": 49.8328009,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
             "city": "Almaty",
             "country": "Kazakhstan",
             "latitude": 43.2363924,
-            "longitude": 76.9457275
+            "longitude": 76.9457275,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         }
     ]
 }

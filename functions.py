@@ -217,3 +217,4 @@ def logic():
 #         print(f"An error occurred: {e}")
 #         return []
 
+city_api("Boston")
