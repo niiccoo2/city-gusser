@@ -2,6 +2,7 @@
 import os
 import json
 import random
+import requests
 
 
 def get_summary(city):
@@ -107,9 +108,6 @@ def compare_city(city1, city2, filepath = "./photos-database.json"):
 
 
 
-import requests
-import os
-import json
 
 def load_opencage_key():
     env_path = os.path.join(os.path.dirname(__file__), 'scraper.env')
@@ -173,16 +171,19 @@ def add_city_to_json(city):
 
 def city_api(city):
     info = get_city_info(city)
+    add_city_to_json(city)
 
     if info and isinstance(info, dict):
         if 'error' in info:
             print(info['error'])
+            return info['error']
         else:
             print(info.get('city'))
+            return(info.get('city'))
     else:
         print('No data returned.')
+        return ''
 
-    add_city_to_json(city)
 
 def logic():
 
