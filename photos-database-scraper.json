@@ -860,6 +860,18 @@
             "country": "United States",
             "latitude": 30.8118989,
             "longitude": -93.740504
+        },
+        {
+            "city": "vv",
+            "country": "Italy",
+            "latitude": 38.6266556,
+            "longitude": 16.0986935
+        },
+        {
+            "city": "venice",
+            "country": "Italy",
+            "latitude": 45.4371908,
+            "longitude": 12.3345898
         }
     ]
 }
