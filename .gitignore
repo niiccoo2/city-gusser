@@ -2,4 +2,5 @@ venv
 __pycache__
 api.py
 .openaienv
+api.txt
 scraper.env
