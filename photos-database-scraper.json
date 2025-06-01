@@ -599,6 +599,18 @@
             "country": "Kazakhstan",
             "latitude": 43.2363924,
             "longitude": 76.9457275
+        },
+        {
+            "city": "New York",
+            "country": "United States",
+            "latitude": 40.7127281,
+            "longitude": -74.0060152
+        },
+        {
+            "city": "denmark",
+            "country": "Denmark",
+            "latitude": 55.670249,
+            "longitude": 10.3333283
         }
     ]
 }

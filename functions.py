@@ -25,7 +25,7 @@ def clear_console():
 
 ### JSON file stuff ###
 
-def pick_random_city(number_of_cities = 1, filepath = "./photos-database.json"):
+def pick_random_city(number_of_cities = 1, filepath = "./photos-database-scraper.json"):
     try:
         with open(filepath, "r", encoding="utf-8") as file:
             data = json.load(file)
@@ -130,7 +130,7 @@ def get_city_info(city):
         "key": OPENCAGE_API_KEY
     }
     geo_response = requests.get(oc_url, params=oc_params).json()
-    print(geo_response)  # Add this line to see the full response
+    #print(geo_response)  # Add this line to see the full response
     if not geo_response["results"]:
         return {"error": "City not found"}
     location = geo_response["results"][0]
@@ -163,8 +163,8 @@ def add_city_to_json(city):
             with open(json_file, 'w', encoding='utf-8') as f:
                 json.dump(data, f, ensure_ascii=False, indent=4)
             print(f"Added {city_info['city']} to {json_file}")
-        else:
-            print(f"{city_info['city']} already in database.")
+        #else:
+            #print(f"{city_info['city']} already in database.")
     else:
         print(f"City not found or error: {city_info.get('error') if city_info else 'Unknown error'}")
 
@@ -172,25 +172,44 @@ def add_city_to_json(city):
 def city_api(city):
     info = get_city_info(city)
     add_city_to_json(city)
-
     if info and isinstance(info, dict):
         if 'error' in info:
             print(info['error'])
-            return info['error']
+            return None
         else:
             print(info.get('city'))
-            return(info.get('city'))
+            return info  # Return the full dict
     else:
         print('No data returned.')
-        return ''
-
+        return None
 
 def logic():
+    while True:
+        guess = input("Guess a city!\n")
+        guess = guess.lower().strip()
+        guess_info = city_api(guess)
+        if not guess_info:
+            print("Invalid guess.")
+            return
 
-    guess = input("Guess a city!\n")
-    city = pick_random_city()
-    print(compare_city(city["city"], guess))
-    
+        city_info_list = pick_random_city(1, filepath="photos-database-scraper.json")
+        if not city_info_list:
+            print("No cities in database.")
+            return
+        city_info = city_info_list[0]
+
+        if guess_info.get('city').lower() == city_info.get('city').lower():
+            print("You Win!!!")
+            exit()
+
+        print("Incorrect Guess")
+
+        dnd = compare_city(guess, city_info.get('city')) #direction and distance = dnd
+        
+        print(dnd)
+
+
+
 # def get_city_data(city, data_type):
 #     json_file_path = "./photos-database.json"
 #     try:
@@ -217,3 +236,4 @@ def logic():
 #         print(f"An error occurred: {e}")
 #         return []
 
+logic()
