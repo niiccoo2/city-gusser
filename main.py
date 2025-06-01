@@ -1,6 +1,7 @@
 import os
 import random
 import time
+import json
 
 # COLORS:
 BLACK = "\033[0;30m"
@@ -26,18 +27,12 @@ RESET = "\033[0m"
 city_name = random.choice(["Seattle","Boston","New York", "London", "Paris"])  # REPLACE THESE LATER
 country_name = random.choice(["USA","France","UK","Brazil","North Korea"])  # REPLACE THESE LATER
 coords = [random.choice([-12.125,55.2,92.4]),random.choice([-85.2,-15.6,2.5])]  # REPLACE THESE LATER
-# guesses = [["Seattle", "USA", [-13.125,55.2]]]
-guesses = []
+guesses = [["Seattle", "USA", [-12.125,55.2]]]
+# guesses = []
 guess = []
 gnum = 0
 
 def past_guesses():
-    global guesses
-    global country_name
-    global coords
-    global city_name
-    global GREEN
-    global YELLOW
     info = []
     # os.system('cls')
     for i in range(len(guesses)):
@@ -65,15 +60,15 @@ def past_guesses():
             info.append(" ")
         info.append("\n")
         info.append(RESET)
-    print(info)
-    time.slee(5)
+    # print(info)
+    time.sleep(5)
     return info
 
+# def jsonning():
+
+
 def get_guess():
-    global gnum
-    global GREEN
-    global RESET
-    gnum -=-1
+    # gnum -=-1
     guess = input("Guess a city!\n").lower()
     if guess == "help":
         pass # MAYBE PUT ALL OF THE POSSIBLE CITIES HERE JUST IN CASE, YOU NEVER KNOW.
@@ -84,7 +79,8 @@ def get_guess():
     # Make guess into a list with index 0 being city, 1 being country, 2 being a list of coordinates.
     for_guess = [guess,"USA",[-12.125,-85.2]]
 
-    return guess
+    return for_guess
+
 
 while True:
     guesses.append(guess)
