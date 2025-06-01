@@ -103,6 +103,44 @@ def compare_city(city1, city2, mode, filepath = "./photos-database-scraper.json"
     except Exception as e:
         return f"Error: {e}"
     
+def compare_country(city1, city2, filepath = "./photos-database-scraper.json"):
+    try:
+        with open(filepath, "r", encoding="utf-8") as file:
+            data = json.load(file)
+            local_list_city = data.get("cities", [])
+
+            city1_data = next((c for c in local_list_city if c["country"].lower() == city1.lower()), None)
+            city2_data = next((c for c in local_list_city if c["country"].lower() == city2.lower()), None)
+
+            if not city1_data or not city2_data:
+                return "One or both cities not found."
+
+            city_lat = city1_data.get('lat') if city1_data.get('lat') is not None else city1_data.get('latitude')
+            city_lon = city1_data.get('lon') if city1_data.get('lon') is not None else city1_data.get('longitude')
+            guess_lat = city2_data.get('lat') if city2_data.get('lat') is not None else city2_data.get('latitude')
+            guess_lon = city2_data.get('lon') if city2_data.get('lon') is not None else city2_data.get('longitude')
+
+            try:
+                city_lat = float(city_lat)
+                city_lon = float(city_lon)
+                guess_lat = float(guess_lat)
+                guess_lon = float(guess_lon)
+            except (TypeError, ValueError):
+                return "Missing location data."
+
+            output = ""
+            if abs((guess_lon + guess_lat) - (city_lon + city_lat)) < 20:
+                   output = "(Yellow)"
+            else:
+                output = "(Grey)"
+
+            return output
+    except FileNotFoundError:
+        return "File not found."
+    except json.JSONDecodeError:
+        return "JSON decode error."
+    except Exception as e:
+        return f"Error: {e}"
 
 def load_opencage_key():
     env_path = os.path.join(os.path.dirname(__file__), 'scraper.env')
@@ -179,39 +217,40 @@ def city_api(city):
         return None
 
 def logic():
+    # Pick the random city ONCE per game, not every guess
+    city_info_list = pick_random_city(1, filepath="photos-database-scraper.json")
+    if not city_info_list:
+        print("No cities in database.")
+        return "No Cities In DataBase"
+    city_info = city_info_list[0]
+
     while True:
         guess = input("Guess a city!\n")
-        guess = guess.lower().strip()
+        guess_normalized = guess.lower().replace('city', '').replace('.', '').replace(',', '').strip()
         guess_info = city_api(guess)
         if not guess_info:
             print("Invalid guess.")
             continue
 
-        city_info_list = pick_random_city(1, filepath="photos-database-scraper.json")
-        if not city_info_list:
-            print("No cities in database.")
-            return "No Cities In DataBase"
-        city_info = city_info_list[0]
+        # Normalize city names for comparison
+        target_city_normalized = city_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
+        guess_city_normalized = guess_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
 
-        if guess_info.get('city', '').lower() == city_info.get('city', '').lower():
+        if guess_city_normalized == target_city_normalized:
             print("Correct! You win!")
             return("Correct! You win!")
 
-        direction = compare_city(guess, city_info.get('city'), "dir")  # direction and distance = dnd
-        relative_distance = compare_city(guess, city_info.get('city'), "cardinal")
-
-        guess_country = guess_info.get('country', '').strip()
-        city_country = city_info.get('country', '').strip()
-        country_hint = guess_country
-        if guess_country and city_country:
-            if guess_country.lower() == city_country.lower():
-                country_hint = f"{guess_country} (green)"
+        direction = compare_city(guess, city_info.get('city'), "dir")
+        relative_distance_city = compare_city(guess, city_info.get('city'), "cardinal")
+        if guess_info.get('country') and city_info.get('country'):
+            relative_distance_country = compare_country(guess_info.get('country'), city_info.get('country'))
+            if "not found" not in relative_distance_country:
+                country_hint = f"{guess_info.get('country')} {relative_distance_country}"
             else:
-                country_hint = f"{guess_country} (grey)"
+                country_hint = "Unknown"
         else:
             country_hint = "Unknown"
-        
-        print(f"{country_hint}, {guess_info.get('city')} {relative_distance}, {direction}")
+        print(f"{country_hint}, {guess_info.get('city')} {relative_distance_city}, {direction}")
 
 if __name__ == "__main__":
     logic()
