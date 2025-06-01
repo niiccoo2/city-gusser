@@ -801,16 +801,20 @@
             "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
-            "city": "new york",
+            "city": "New York",
             "country": "United States",
             "latitude": 40.7127281,
-            "longitude": -74.0060152
+            "longitude": -74.0060152,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         },
         {
-            "city": "clevland",
+            "city": "Cleveland",
             "country": "United States",
             "latitude": 37.9791718,
-            "longitude": -101.7652375
+            "longitude": -101.7652375,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         }
     ]
 }
