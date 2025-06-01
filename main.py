@@ -59,6 +59,23 @@ def main():
             print("Guess Wrong But Valid.")
             print("Giving Hint.")
             print(f"Hint image: {city_hidden.get('image', 'No image available')}")
+
+            city_lat = str(city_hidden.get('lat', 'No image available'))
+            city_lon += str(" "+city_hidden.get('lon', 'No image available'))
+
+            guess_lat = str(current_guess.get('lat', 'No image available'))
+            guess_lon = str(current_guess.get('lon', 'No image available'))
+
+            print(city_lat, city_lon)
+            print(guess_lat, guess_lon)
+
+            if abs((guess_lon+guess_lat)-(city_lon+city_lat)) < 10:
+                print("Yellow (debug: close)")
+            else:
+                print("Grey (debug: far)") 
+            
+             
+
         else:
             print("Failed to understand guess.")
 
