@@ -96,9 +96,9 @@
 
 
 city_lon = 52
-guess_lon = 51
+guess_lon = -51
 city_lat = 56
-guess_lat = 53
+guess_lat = -53
 
 if city_lon-guess_lon > 0 and city_lon-guess_lon > city_lat-guess_lat:
     print("East")
