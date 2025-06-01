@@ -6,7 +6,7 @@ def clear_console():
     os.system('cls' if os.name == 'nt' else 'clear')
 
 def fetch_cities_from_json():
-    json_file_path = r"C:\Users\benel\OneDrive\Desktop\VS Code Projects\city-gusser\photos-database.json"
+    json_file_path = r"./photos-database.json"
     try:
         with open(json_file_path, "r", encoding="utf-8") as file:
             data = json.load(file)
