@@ -199,7 +199,7 @@ if __name__ == "__main__":
         found = False
         found_author = False
         found_license = False
-        last_url = image_urls[0]
+        last_url = image_urls[-1]
         for url in reversed(image_urls):
             author, license = get_author_and_license_api(url)
             if author != 'Unknown Author':
@@ -232,7 +232,7 @@ if __name__ == "__main__":
             'longitude': longitude,
             'image': url if found else last_url,
             'credit': credit,
-            "ai": "",
+            'ai': ""
         }
         updated_cities.append(city_entry)
     print('Cities with no author:', noauthor)

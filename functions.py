@@ -2,7 +2,9 @@ from openai import OpenAI #type: ignore
 import os
 import json
 import random
-import requests #type: ignore
+import requests
+from scraper import *
+
 
 def get_summary(city):
     with open("api.txt", "r") as api:
@@ -296,4 +298,3 @@ def logic():
 
 if __name__ == "__main__":
     logic()
-    save_and_quit() #type: ignore #xavier this is you DO IT.
