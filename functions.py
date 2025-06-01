@@ -221,7 +221,7 @@ def logic():
         print("No cities in database.")
         return "No Cities In DataBase"
     city_info = city_info_list[0]
-
+    print(f"City: {city_info.get('city', 'Unknown City')}")
     while True:
         guess = input("Guess a city!\n")
         guess_normalized = guess.lower().replace('city', '').replace('.', '').replace(',', '').strip()
