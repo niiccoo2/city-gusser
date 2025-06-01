@@ -50,7 +50,6 @@ def pick_random_city(number_of_cities = 1, filepath = "./photos-database-scraper
         print(f"An error occurred: {e}")
         return []
     
-
 def compare_city(city1, city2, mode, filepath = "./photos-database-scraper.json"):
     try:
         with open(filepath, "r", encoding="utf-8") as file:
@@ -81,9 +80,9 @@ def compare_city(city1, city2, mode, filepath = "./photos-database-scraper.json"
             if mode == "dir":
                 if abs(city_lon - guess_lon) > abs(city_lat - guess_lat):
                     if city_lon > guess_lon:
-                        output = "East"
+                        output = "West"  # Flipped from East
                     else:
-                        output = "West"
+                        output = "East"  # Flipped from West
                 elif mode == "cardinal":
                     if city_lat > guess_lat:
                         output = "North"
@@ -202,7 +201,6 @@ def add_city_to_json(city):
         # print(f"City not found or error: {city_info.get('error') if city_info else 'Unknown error'}")
         pass
 
-
 def city_api(city):
     info = get_city_info(city)
     add_city_to_json(city)
@@ -223,34 +221,65 @@ def logic():
         print("No cities in database.")
         return "No Cities In DataBase"
     city_info = city_info_list[0]
-
+    print(f"City: {city_info.get('city', 'Unknown City')}")
     while True:
+        try_number = 0
+
+        if try_number == 5:
+            break
+
         guess = input("Guess a city!\n")
+        try_number += 1
         guess_normalized = guess.lower().replace('city', '').replace('.', '').replace(',', '').strip()
         guess_info = city_api(guess)
         if not guess_info:
             print("Invalid guess.")
             continue
 
-        # Normalize city names for comparison
+        
+
         target_city_normalized = city_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
         guess_city_normalized = guess_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
+        target_country_normalized = city_info.get('country', '').lower().strip()
+        guess_country_normalized = guess_info.get('country', '').lower().strip()
+
+        print(target_city_normalized)
+
+
+
+        def get_state(city_dict):
+            components = city_dict.get('components', {})
+            return components.get('state', '').lower().strip() if components else ''
+
+        guess_state = get_state(guess_info)
+        target_state = get_state(city_info)
+
+        if target_country_normalized == 'united states' and guess_country_normalized == 'united states' and guess_state and target_state:
+            if guess_state == target_state:
+                country_hint = f"{guess_state.title()} (green)"
+            else:
+                country_hint = f"{guess_state.title()} (grey)"
+        elif guess_country_normalized == target_country_normalized:
+            country_hint = f"{guess_info.get('country')} (green)"
+        else:
+            if guess_info.get('country') and city_info.get('country'):
+                relative_distance_country = compare_country(guess_info.get('country'), city_info.get('country'))
+                if relative_distance_country == "(Yellow)":
+                    country_hint = f"{guess_info.get('country')} (yellow)"
+                else:
+                    country_hint = f"{guess_info.get('country')} (grey)"
+            else:
+                country_hint = "Unknown"
 
         if guess_city_normalized == target_city_normalized:
-            print("Correct! You win!")
-            return("Correct! You win!")
+            print(f"Correct! You win! {country_hint}")
+            return(f"Correct! You win! {country_hint}")
 
         direction = compare_city(guess, city_info.get('city'), "dir")
         relative_distance_city = compare_city(guess, city_info.get('city'), "cardinal")
-        if guess_info.get('country') and city_info.get('country'):
-            relative_distance_country = compare_country(guess_info.get('country'), city_info.get('country'))
-            if "not found" not in relative_distance_country:
-                country_hint = f"{guess_info.get('country')} {relative_distance_country}"
-            else:
-                country_hint = "Unknown"
-        else:
-            country_hint = "Unknown"
         print(f"{country_hint}, {guess_info.get('city')} {relative_distance_city}, {direction}")
+
 
 if __name__ == "__main__":
     logic()
+    save_and_quit() #type: ignore #xavier this is you DO IT.
