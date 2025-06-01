@@ -50,7 +50,6 @@ def pick_random_city(number_of_cities = 1, filepath = "./photos-database-scraper
         print(f"An error occurred: {e}")
         return []
     
-
 def compare_city(city1, city2, mode, filepath = "./photos-database-scraper.json"):
     try:
         with open(filepath, "r", encoding="utf-8") as file:
@@ -81,9 +80,9 @@ def compare_city(city1, city2, mode, filepath = "./photos-database-scraper.json"
             if mode == "dir":
                 if abs(city_lon - guess_lon) > abs(city_lat - guess_lat):
                     if city_lon > guess_lon:
-                        output = "East"
+                        output = "West"  # Flipped from East
                     else:
-                        output = "West"
+                        output = "East"  # Flipped from West
                 elif mode == "cardinal":
                     if city_lat > guess_lat:
                         output = "North"
@@ -202,7 +201,6 @@ def add_city_to_json(city):
         # print(f"City not found or error: {city_info.get('error') if city_info else 'Unknown error'}")
         pass
 
-
 def city_api(city):
     info = get_city_info(city)
     add_city_to_json(city)
@@ -232,16 +230,16 @@ def logic():
             print("Invalid guess.")
             continue
 
+        
 
         target_city_normalized = city_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
         guess_city_normalized = guess_info.get('city', '').lower().replace('city', '').replace('.', '').replace(',', '').strip()
         target_country_normalized = city_info.get('country', '').lower().strip()
         guess_country_normalized = guess_info.get('country', '').lower().strip()
 
-        # US state logic: check if both cities are in the US and if the state matches
+        print(target_city_normalized)
+
         def get_state(city_dict):
-            # Try to extract state from city name if present (e.g., 'New York City, NY')
-            # But your JSON does not have state info, so fallback to OpenCage API if available
             components = city_dict.get('components', {})
             return components.get('state', '').lower().strip() if components else ''
 

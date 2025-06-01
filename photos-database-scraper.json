@@ -853,6 +853,12 @@
             "country": "Mexico",
             "latitude": 24.833333,
             "longitude": -104.833333
+        },
+        {
+            "city": "Tampere",
+            "country": "Finland",
+            "latitude": 61.4980214,
+            "longitude": 23.7603118
         }
     ]
 }
