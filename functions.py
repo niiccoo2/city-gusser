@@ -56,7 +56,30 @@ def pick_random_city(number_of_cities = 1, filepath = "./photos-database-scraper
     except Exception as e:
         print(f"An error occurred: {e}")
         return []
-    
+
+def city_info(city_name, filepath = "./photos-database-scraper.json"):
+    try:
+        with open(filepath, "r", encoding="utf-8") as file:
+            data = json.load(file)
+            local_list_city = data.get("cities", [])
+            # Find the city info by name (case-insensitive)
+            for city in local_list_city:
+                if city.get("city", "").lower() == city_name.lower():
+                    return city
+            # If not found, return None or an error message
+            print(f"City '{city_name}' not found in database.")
+            return None
+    except FileNotFoundError:
+        print(f"Error: File not found at {filepath}")
+        return None
+    except json.JSONDecodeError:
+        print("Error: Failed to decode JSON file.")
+        return None
+    except Exception as e:
+        print(f"An error occurred: {e}")
+        return None
+
+
 def compare_city(city1, city2, mode, filepath = "./photos-database-scraper.json"):
     try:
         with open(filepath, "r", encoding="utf-8") as file:
