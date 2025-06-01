@@ -95,16 +95,17 @@
 
 
 
-if city_lon-guess_lon > 0:
+city_lon = 52
+guess_lon = 51
+city_lat = 56
+guess_lat = 53
+
+if city_lon-guess_lon > 0 and city_lon-guess_lon > city_lat-guess_lat:
     print("East")
-elif city_lon-guess_lon < 0:
+if city_lon-guess_lon < 0 and city_lon-guess_lon > city_lat-guess_lat:
     print("West")
-if city_lat-guess_lat > 0:
+if city_lat-guess_lat > 0 and city_lat-guess_lat > city_lon-guess_lat:
     print("North")
-elif city_lat-guess_lat < 0:
+if city_lat-guess_lat < 0 and city_lat-guess_lat > city_lon-guess_lat:
     print("South")
-
-
-
-
 
