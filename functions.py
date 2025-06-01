@@ -40,6 +40,7 @@ def pick_random_city(number_of_cities = 1, filepath = "./photos-database-scraper
                 random_selections.append(selected)
                 #print(selected)
 
+
         return random_selections
     
     except FileNotFoundError:
@@ -178,23 +179,6 @@ def get_city_info(city):
         "longitude": lng
     }
 
-# def city_add_to_json(city, filepath='photos-database-scraper.json'):
-#     city_info = get_city_info(city)
-#     city_entry = {
-#     'city': city,
-#     'country': country,
-#     'latitude': latitude,
-#     'longitude': longitude,
-#     'image': url if found else last_url,
-#     'credit': credit,
-#     'ai': ""
-#     }
-#     # Save results to JSON
-#     with open(filepath, 'r', encoding='utf-8') as file:
-#         data = json.load(file)
-#     with open('photos-database-scraper.json', 'w', encoding='utf-8') as file:
-#         json.dump({'cities': updated_cities}, file, ensure_ascii=False, indent=4)
-
 def add_city_to_json(city):
     city_info = get_city_info(city)
     if city_info and 'error' not in city_info:
@@ -244,7 +228,13 @@ def read_ai_data(city, filepath="photos-database-scraper.json"):
 
 def logic():
     # Pick the random city ONCE per game, not every guess
-    city_info_list = pick_random_city(1, filepath="photos-database-scraper.json")
+    while True:
+        city_info_list = pick_random_city(1, filepath="photos-database-scraper.json")
+        if not city_info_list or 'image' not in city_info_list[0]:
+            continue
+        else:
+            break
+        
     if not city_info_list:
         print("No cities in database.")
         return "No Cities In DataBase"
