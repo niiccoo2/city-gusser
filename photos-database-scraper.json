@@ -815,6 +815,14 @@
             "longitude": -101.7652375,
             "image": "LINK",
             "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "Watertown",
+            "country": "United States",
+            "latitude": 42.3652518,
+            "longitude": -71.1843236,
+            "image": "LINK",
+            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
         }
     ]
 }
