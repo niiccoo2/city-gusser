@@ -215,6 +215,20 @@ def city_api(city):
     else:
         print('No data returned.')
         return None
+    
+def write_ai_data(city, data, filepath="photos-database-scraper.json"):
+    with open(filepath, "r", encoding="utf-8") as file:
+        data_json = json.load(file)
+    for i in range(len(data_json["cities"])):
+        if data_json["cities"][i]["city"].lower() == city.lower():
+            data_json["cities"][i]["ai"] = data
+            break
+def read_ai_data(city, filepath="photos-database-scraper.json"):
+    with open(filepath, "r", encoding="utf-8") as file:
+        data_json = json.load(file)
+    for i in range(len(data_json["cities"])):
+        if data_json["cities"][i]["city"].lower() == city.lower():
+            return data_json["cities"][i].get("ai", "")
 
 def logic():
     # Pick the random city ONCE per game, not every guess

@@ -113,14 +113,6 @@
             "credit": "Photo by Yourusernamewillbepublic2 / Wikimedia Commons, CC0"
         },
         {
-            "city": "Chicago",
-            "country": "United States",
-            "latitude": 41.8755616,
-            "longitude": -87.6244212,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/5/5f/Chicago_from_North_Avenue_Beach_June_2015_panorama_2.jpg",
-            "credit": "Photo by King of Hearts / Wikimedia Commons, CC BY-SA 3.0"
-        },
-        {
             "city": "Madrid",
             "country": "Spain",
             "latitude": 40.4167047,
@@ -143,14 +135,6 @@
             "longitude": 126.9782914,
             "image": "https://upload.wikimedia.org/wikipedia/commons/0/00/August_2007_motel_room_in_Seoul.jpg",
             "credit": "Photo by Syced / Wikimedia Commons, CC0"
-        },
-        {
-            "city": "San Francisco",
-            "country": "United States",
-            "latitude": 37.7792588,
-            "longitude": -122.4193286,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/5/51/View_of_San_Francisco_from_Ina_Coolbrith_Park-01445.jpg",
-            "credit": "Photo by Frank Schulenburg / Wikimedia Commons, CC BY-SA 4.0"
         },
         {
             "city": "Istanbul",
@@ -497,14 +481,6 @@
             "credit": "Photo by Akil Head / Wikimedia Commons, CC BY-SA 3.0"
         },
         {
-            "city": "Phoenix",
-            "country": "United States",
-            "latitude": 33.4484367,
-            "longitude": -112.074141,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/f/f4/Phoenix_Skyline_from_a_plan.jpg",
-            "credit": "Photo by Weridman21213 / Wikimedia Commons, CC0"
-        },
-        {
             "city": "Dallas",
             "country": "United States",
             "latitude": 32.7762719,
@@ -601,14 +577,6 @@
             "credit": "Photo by Sherbaz jamaldini / Wikimedia Commons, CC BY-SA 4.0"
         },
         {
-            "city": "Bangalore City",
-            "country": "India",
-            "latitude": 12.9781739,
-            "longitude": 77.5695603,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/9/97/A_photo_of_a_city_scene_in_Bengaluru.jpg",
-            "credit": "Photo by Matthew T Rader / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
             "city": "Hyderabad",
             "country": "India",
             "latitude": 17.360589,
@@ -631,14 +599,6 @@
             "longitude": 73.8545071,
             "image": "https://upload.wikimedia.org/wikipedia/commons/4/46/Poona-club_0.jpg",
             "credit": "Photo by Clifton & Co. Mumbai / Wikimedia Commons, CC BY 4.0"
-        },
-        {
-            "city": "Ahmedabad City",
-            "country": "India",
-            "latitude": 23.0434172,
-            "longitude": 72.5630291,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/c/cc/Flight_above_Ahmedabad_city_5.jpg",
-            "credit": "Photo by Gannu03 / Wikimedia Commons, CC BY-SA 4.0"
         },
         {
             "city": "Brisbane",
@@ -745,14 +705,6 @@
             "credit": "Photo by Unknown Author / Wikimedia Commons, Unknown License"
         },
         {
-            "city": "Kiev City",
-            "country": "Ukraine",
-            "latitude": 50.387643,
-            "longitude": 30.4713298,
-            "image": "https://upload.wikimedia.org/wikipedia/commons/9/94/Good_Wine_Kyiv_inside_2.jpg",
-            "credit": "Photo by Кучерявий Іван / Wikimedia Commons, CC BY-SA 4.0"
-        },
-        {
             "city": "Bucharest",
             "country": "Romania",
             "latitude": 44.4361414,
@@ -828,31 +780,41 @@
             "city": "Zarafshan",
             "country": "Uzbekistan",
             "latitude": 41.5719274,
-            "longitude": 64.1961296
+            "longitude": 64.1961296,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/d/dc/Zarafshan_river_near_Panjakent_-_02.jpg",
+            "credit": "Photo by Satdeep Gill / Wikimedia Commons, CC BY 4.0"
         },
         {
             "city": "Osaka",
             "country": "Japan",
             "latitude": 34.6937569,
-            "longitude": 135.5014539
+            "longitude": 135.5014539,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/66/Clock_in_Osaka.jpg",
+            "credit": "Photo by Syced / Wikimedia Commons, CC0"
         },
         {
             "city": "Algeria",
             "country": "Algeria",
             "latitude": 28.0000272,
-            "longitude": 2.9999825
+            "longitude": 2.9999825,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/6a/Chahids_de_Larhat.jpg",
+            "credit": "Photo by Zenetian / Wikimedia Commons, CC BY-SA 4.0"
         },
         {
             "city": "Taipei",
             "country": "Taiwan",
             "latitude": 25.0375198,
-            "longitude": 121.5636796
+            "longitude": 121.5636796,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/e/e2/October_2005_Taipei_6.jpg",
+            "credit": "Photo by Syced / Wikimedia Commons, CC0"
         },
         {
             "city": "Durango",
             "country": "Mexico",
             "latitude": 24.833333,
-            "longitude": -104.833333
+            "longitude": -104.833333,
+            "image": "https://upload.wikimedia.org/wikipedia/commons/6/62/Jaizale_txistulari_taldea.jpg",
+            "credit": "Photo by Wikimaribarre / Wikimedia Commons, CC BY-SA 4.0"
         }
     ]
 }
