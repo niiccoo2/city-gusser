@@ -10,7 +10,7 @@ def index():
     image = city[0].get('image')
     blurb = get_summary(f"{city[0].get('city')}, {city[0].get('country')}")
     user = {'username': 'Nico'}
-    return render_template('index.html', title='Home', user=user, image=image, blurb=blurb)
+    return render_template('index.html', title='Home', image=image, blurb=blurb)
 
 @app.route('/login')
 def login():
