@@ -1,4 +1,4 @@
-from openai import OpenAI
+from openai import OpenAI #type: ignore
 import os
 import json
 import random
