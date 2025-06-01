@@ -102,10 +102,10 @@ def compare_city(city1, city2, filepath = "./photos-database-scraper.json"):
 
             if abs((guess_lon + guess_lat) - (city_lon + city_lat)) < 20:
                 print("Yellow (debug: close)")
-                output += " close"
+                output += "(Yellow)"
             else:
                 print("Grey (debug: far)")
-                output += " far"
+                output += "(Grey)"
             return output
     except FileNotFoundError:
         print(f"Error: File not found at {filepath}")
@@ -199,7 +199,7 @@ def logic():
         guess_info = city_api(guess)
         if not guess_info:
             print("Invalid guess.")
-            return
+            continue
 
         city_info_list = pick_random_city(1, filepath="photos-database-scraper.json")
         if not city_info_list:
@@ -207,12 +207,25 @@ def logic():
             return
         city_info = city_info_list[0]
 
-        if guess_info.get('city').lower() == city_info.get('city').lower():
-            print("You Win!!!")
-            exit()
+        if guess_info.get('city', '').lower() == city_info.get('city', '').lower():
+            print("Correct! You win!")
+            break
 
         print("Incorrect Guess")
 
-        dnd = compare_city(guess, city_info.get('city')) #direction and distance = dnd
-        
+        dnd = compare_city(guess, city_info.get('city'))  # direction and distance = dnd
         print(dnd)
+
+        guess_country = guess_info.get('country', '').strip()
+        city_country = city_info.get('country', '').strip()
+        country_hint = guess_country
+        if guess_country and city_country:
+            if guess_country.lower() == city_country.lower():
+                country_hint = f"{guess_country} (green)"
+            else:
+                country_hint = f"{guess_country} (grey)"
+        else:
+            print("Country information unavailable.")
+            country_hint = "Unknown"
+
+        print(country_hint, ",", guess_info.get('city'),",", dnd)
