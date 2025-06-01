@@ -22,23 +22,23 @@
             "latitude": 40.7127281,
             "longitude": -74.0060152,
             "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Times_Square%2C_Broadway%2C_May_2016.jpg/250px-Times_Square%2C_Broadway%2C_May_2016.jpg",
-            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+            "credit": "Photo by Peter K Burian / Wikimedia Commons, CC BY-SA 4.0"
         },
         {
             "city": "London",
             "country": "United Kingdom",
             "latitude": 51.5074456,
             "longitude": -0.1277653,
-            "image": "LINK",
-            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/0/04/050114_2495_london_city.jpg",
+            "credit": "Photo by Joe D / Wikimedia Commons, CC BY-SA 3.0"
         },
         {
             "city": "Paris",
             "country": "France",
             "latitude": 48.8534951,
             "longitude": 2.3483915,
-            "image": "LINK",
-            "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+            "image": "https://upload.wikimedia.org/wikipedia/commons/d/de/UNESCO_Paris.JPG",
+            "credit": "Photo by Alf van Beem / Wikimedia Commons, CC0 1.0 Universal"
         },
         {
             "city": "Los Angeles",
@@ -799,6 +799,18 @@
             "longitude": 76.9457275,
             "image": "LINK",
             "credit": "Photo by AUTHOR / Wikimedia Commons, CC BY-SA 2.0"
+        },
+        {
+            "city": "new york",
+            "country": "United States",
+            "latitude": 40.7127281,
+            "longitude": -74.0060152
+        },
+        {
+            "city": "clevland",
+            "country": "United States",
+            "latitude": 37.9791718,
+            "longitude": -101.7652375
         }
     ]
 }

@@ -52,7 +52,7 @@ def pick_random_city(number_of_cities = 1, filepath = "./photos-database-scraper
         return []
     
 
-def compare_city(city1, city2, filepath = "./photos-database.json"):
+def compare_city(city1, city2, filepath = "./photos-database-scraper.json"):
     try:
         with open(filepath, "r", encoding="utf-8") as file:
             data = json.load(file)
@@ -65,10 +65,16 @@ def compare_city(city1, city2, filepath = "./photos-database.json"):
                 print("One or both cities not found.")
                 return None
 
-            city_lat = city1_data.get('lat')
-            city_lon = city1_data.get('lon')
-            guess_lat = city2_data.get('lat')
-            guess_lon = city2_data.get('lon')
+            # Try both 'lat' and 'latitude' keys for compatibility
+            city_lat = city1_data.get('lat') if city1_data.get('lat') is not None else city1_data.get('latitude')
+            city_lon = city1_data.get('lon') if city1_data.get('lon') is not None else city1_data.get('longitude')
+            guess_lat = city2_data.get('lat') if city2_data.get('lat') is not None else city2_data.get('latitude')
+            guess_lon = city2_data.get('lon') if city2_data.get('lon') is not None else city2_data.get('longitude')
+
+            # Check for missing data
+            if None in (city_lat, city_lon, guess_lat, guess_lon):
+                print("Missing latitude or longitude data for one or both cities.")
+                return "Missing location data."
 
             output = ""
 
@@ -104,7 +110,7 @@ def compare_city(city1, city2, filepath = "./photos-database.json"):
         return []
     except Exception as e:
         print(f"An error occurred: {e}")
-        return []  
+        return []
 
 
 
@@ -208,32 +214,5 @@ def logic():
         
         print(dnd)
 
-
-
-# def get_city_data(city, data_type):
-#     json_file_path = "./photos-database.json"
-#     try:
-#         with open(json_file_path, "r", encoding="utf-8") as file:
-#             data = json.load(file)
-#             local_list_city = data.get("cities", [])
-
-#             if data_type == "all":
-#                 return [city_data for city_data in local_list_city if city_data["city"].lower() == city.lower()]
-#             else:
-#                 for city_data in local_list_city:
-#                     if city_data["city"].lower() == city.lower():
-#                         print(city_data.get(data_type))
-#                         return city_data.get(data_type)
-#                 print(f"{city} not found or {data_type} not available.")
-#                 return None
-#     except FileNotFoundError:
-#         print(f"Error: File not found at {json_file_path}")
-#         return []
-#     except json.JSONDecodeError:
-#         print("Error: Failed to decode JSON file.")
-#         return []
-#     except Exception as e:
-#         print(f"An error occurred: {e}")
-#         return []
-
-logic()
+if __name__ == "__main__":
+    logic()
