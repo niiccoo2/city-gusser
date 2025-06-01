@@ -15,8 +15,10 @@ def index():
     city = None
     if state.get('city') == '':
         city = pick_random_city()
-    # else:
-    #     city = get_city_info(state.get('city'))
+        state['city'] = city[0]['city']  # Set the city in state for future guesses
+        state['guesses'] = []            # Reset guesses for new game
+    else:
+        city = [city_info(state.get('city'))]  # Get city info from state
     print(city)
     image = city[0].get('image')
     blurb = get_summary(f"{city[0].get('city')}, {city[0].get('country')}")
