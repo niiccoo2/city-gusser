@@ -52,7 +52,7 @@ def pick_random_city(number_of_cities = 1, filepath = "./photos-database-scraper
         return []
     
 
-def compare_city(city1, city2, filepath = "./photos-database.json"):
+def compare_city(city1, city2, filepath = "./photos-database-scraper.json"):
     try:
         with open(filepath, "r", encoding="utf-8") as file:
             data = json.load(file)
