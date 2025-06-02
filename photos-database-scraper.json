@@ -950,6 +950,30 @@
             "country": "Mexico",
             "latitude": 25.8745384,
             "longitude": -97.522571
+        },
+        {
+            "city": "vienna",
+            "country": "Austria",
+            "latitude": 48.2083537,
+            "longitude": 16.3725042
+        },
+        {
+            "city": "thailand",
+            "country": "Thailand",
+            "latitude": 14.8971921,
+            "longitude": 100.83273
+        },
+        {
+            "city": "siberia",
+            "country": "Italy",
+            "latitude": 45.1685441,
+            "longitude": 8.0902162
+        },
+        {
+            "city": "Bejing",
+            "country": "China",
+            "latitude": 40.190632,
+            "longitude": 116.412144
         }
     ]
 }

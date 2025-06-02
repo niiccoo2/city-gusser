@@ -494,6 +494,8 @@ def search_commons_images_by_name(city_name, max_images=1):
 if __name__ == "__main__":
     nolicenses = 0
     noauthor = 0
+    author = ''
+    url = ''
     with open('photos-database-scraper.json', 'r', encoding='utf-8') as file:
         data = json.load(file)
     categories = [city['city'] for city in data.get('cities', []) if 'city' in city]
